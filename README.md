@@ -1,5 +1,12 @@
-# Laing O'Rourke ENGG4064 Project
+# Laing O'Rourke Social Network Project
+# This is an improvement on the previous prototype developed by the 2019 ENGG4064 JFC Team
 
+# Update 2019-2020
+
+
+
+
+# Update 2019
 Web Application for social network analysis. 
 
 Python Flask is required and a flask server can be made by running flask_server.py and then accessed at 127.0.0.1:5000/ in your browser.
