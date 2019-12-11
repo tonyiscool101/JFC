@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Laing O'Rourke HR</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+</head>
+<body>
+
+<main class="main">
+  <aside class="sidebar">
+    <nav class="nav">
+      <ul>
+        <li class="active"><a href="local_dashboard">Employee (Local)</a></li>
+        <li><a href="global_dashboard">Employee (Global)</a></li>
+        <li><a href="office_dashboard">Office</a></li>
+        <li><a href="department_dashboard">Department</a></li>
+        <li><a href="city_dashboard">City</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <section class="mainwindow">
+    <div class="container">
+      <center>
+        <img class = "resize" src ="{{ url_for('static', filename='images/logo.jpg') }}">
+      </center>
+      <div id="namer">
+       <div id="namer-input">
+
+<form action = "/local_dashboard" method="POST">
+         <input id = "myInput" type="text" name="Input" placeholder="{{welcome_message}}">
+
+         <input id = "myBtn" type="submit" style="display: none;"></button>
+           </form>
+         <script>
+         var input = document.getElementById("myInput");
+         input.addEventListener("keyup", function(event) {
+           if (event.keyCode === 13) {
+             event.preventDefault();
+             document.getElementById("myBtn").click();
+           }
+         });
+       </script>
+
+       </div>
+
+
+       </div>
+       <center>
+
+         {% if message == ''%}
+
+
+         {%else%}
+
+           <table>
+             <tr>
+               <td style="text-align:right"><p>         <div class ="tooltip">
+                        <p><span style="white-space: pre-line"><b>Information for Employee:</b></span></p>
+                        <span class="tooltiptext">Employees name </span>
+                       </div></p></td>
+                <td style = "color: #EEEEEE"> ___  </td>
+                 <td style="text-align:left"><p> {{name}} </p></td>
+
+             </tr>
+
+             <tr>
+               <td style="text-align:right"><p>         <div class ="tooltip">
+                        <p><span style="white-space: pre-line"><b>Evenness:</b></span></p>
+                        <span class="tooltiptext">Does this employee send or recieve more emails? A value closer to 1 indicates that they send more than they recieve </span>
+                       </div></p></td>
+                <td style = "color: #EEEEEE"> ___  </td>
+                <td style="text-align:left">  <p><span style="white-space: pre-line">{{message}}</span></p></td>
+             </tr>
+
+             <tr>
+               <td style="text-align:right"><p>         <div class ="tooltip">
+                        <p><span style="white-space: pre-line"><b>Possible Successors:<b></span></p>
+                        <span class="tooltiptext">Who could take this employees place in the network? </span>
+                      </div></p></td>
+                <td style = "color: #EEEEEE"> ___  </td>
+                <td style="text-align:left"> <p><span style="white-space: pre-line">{{message2}}</span></p></td>
+             </tr>
+
+             <tr>
+               <td style="text-align:right"><p>         <div class ="tooltip">
+                        <p><span style="white-space: pre-line"><b>Responsiveness:</b></span></p>
+                        <span class="tooltiptext">How fast does this employee respond to emails on a average (in days)</span>
+                      </div></p></td>
+                <td style = "color: #EEEEEE"> ___  </td>
+                <td style="text-align:left">  <p><span style="white-space: pre-line">{{message5}}</span></p></td>
+             </tr>
+
+
+             <tr>
+               <td style="text-align:right"><p>         <div class ="tooltip">
+                        <p><span style="white-space: pre-line">Suggested Connections:</span></p>
+                        <span class="tooltiptext">Who should this employee attempt to connect with to expand their network?  </span>
+                       </div></p></td>
+                <td style = "color: #EEEEEE"> ___  </td>
+                <td style="text-align:left">  <p><span style="white-space: pre-line">{{message4}}</span></p></td>
+             </tr>
+
+           </table>
+
+
+
+            {%endif%}
+
+     </center>
+     </div>
+    </div>
+
+  </section>
+
+</main>
+</body>
+
+</html>

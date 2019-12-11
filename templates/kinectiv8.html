@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kinectiv8.io</title>
+<script src="https://d3js.org/d3.v2.min.js?2.9.3"></script>
+<style>
+
+.link {
+  stroke: #aaa;
+}
+
+.node text {
+stroke:#333;
+cursos:pointer;
+}
+
+.node circle{
+stroke:#fff;
+stroke-width:3px;
+fill:#555;
+}
+
+body{
+			   font-family: Arial;
+			   }
+.split{
+			   height: 100%;
+			   width: 50%;
+			   position: fixed;
+
+			   top: 0;
+			   overflow-x: hidden;
+			   padding-top:20px;
+				 z-index: -1;
+				 border-width: medium;
+				 border-color: #ff0000;
+			   }
+.left{
+			   left: 0;
+			   background-colour: #111;
+			   }
+
+.right{
+			   right:0;
+			   background-colour:red;
+
+
+			   }
+.centered{
+			   position: absolute;
+			   top: 60%;
+			   left: 50%;
+			   transform: translate(-50%,-50%);
+			   text-align: center;
+				 z-index: -1;
+			   }
+.textarea {
+	 		  width: 100%;
+	 		  height: 200px;
+	 		  padding: 12px 20px;
+	 		  box-sizing: border-box;
+	 		  border: 2px solid #ccc;
+	 		  border-radius: 4px;
+	 		  background-color: #f8f8f8;
+	 		  font-size: 16px;
+	 		  resize: none;
+				z-index:  = 1;
+	 		  }
+
+.resize {
+				  max-width:30%;
+				  max-height:30%;
+}
+.txtbox{
+	z-index: 1;
+}
+</style>
+</head>
+<body>
+	<center>
+		<img class = "resize" src ="/static/images/logo.jpg" >
+
+
+		<div>
+    <select name="context" method="GET" action="/">
+    <option value="volvo">Local</option>
+    <option value="saab">Global</option>
+    <option value="mercedes">Office</option>
+    <option value="audi">Project</option>
+    <option value="audi">Department</option>
+    </select>
+    <form action="" method="post">
+        <p>
+            <label for="ID">ID</label>
+            <input type="text" name="ID">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+    {% if message %}
+        <p>Response Ratio: {{ message }}</p>
+        
+    {% endif %}
+	</div>
+		</center>
+
+<div class = "split left">
+		<div class="centered">
+			<h2> Individual</h2>
+
+			<p> Position: </p>
+			<p> Projects:</p>
+	</div></div>
+
+		<div class = "split right">
+		<div class="centered">
+			<script>
+
+			var width = 1000,
+			    height = 600
+
+			var svg = d3.select("body").append("svg")
+			    .attr("width", width)
+			    .attr("height", height);
+
+			var force = d3.layout.force()
+			    .gravity(.05)
+			    .distance(10)
+			    .charge(-100)
+			    .size([width, height]);
+
+			d3.json("/static/projects.json", function(json) {
+			  force
+			      .nodes(json.nodes)
+			      .links(json.links)
+			      .start();
+
+			  var link = svg.selectAll(".link")
+			      .data(json.links)
+			    .enter().append("line")
+			      .attr("class", "link")
+			    .style("stroke-width", function(d) { return Math.sqrt(d.weight); });
+
+			  var node = svg.selectAll(".node")
+			      .data(json.nodes)
+			    .enter().append("g")
+			      .attr("class", "node")
+			      .call(force.drag);
+
+			  node.append("circle")
+			      .attr("r","5");
+
+			  node.append("text")
+			      .attr("dx", 4)
+			      .attr("dy", ".35em")
+			      .text(function(d) { return d.name });
+
+			  force.on("tick", function() {
+			    link.attr("x1", function(d) { return d.source.x; })
+			        .attr("y1", function(d) { return d.source.y; })
+			        .attr("x2", function(d) { return d.target.x; })
+			        .attr("y2", function(d) { return d.target.y; });
+
+			    node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
+			  });
+			});
+
+			</script>
+
+	</div></div>
+
+</body>
+</html>

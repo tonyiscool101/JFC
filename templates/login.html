@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Laing O'Rourke HR Tool</title>
+</head>
+
+<style>
+body{
+  background-color: #ff0000
+}
+img.resize {
+  max-width:30%;
+  max-height:30%;
+}
+font-family: Arial;
+}
+.split{
+height: 100%;
+width: 50%;
+position: fixed;
+
+top: 0;
+overflow-x: hidden;
+padding-top:20px;
+
+}
+.left{
+left: 0;
+background-colour: #111;
+}
+
+.right{
+right:0;
+background-colour:red;
+
+
+}
+.centered{
+position: absolute;
+top: 60%;
+left: 50%;
+transform: translate(-50%,-50%);
+text-align: center;
+}
+</style>
+<body>
+
+    <img class = "resize" src ="/static/images/logo.jpg" >
+    <form action="" method="post">
+        <p>
+            <label for="ID">ID</label>
+            <input type="text" name="ID">
+        </p>
+        <p>
+            <input type="submit">
+        </p>
+    </form>
+    {% if message %}
+        <p>{{ message }}</p>
+    {% endif %}
+
+    <div class = "split left">
+    		<div class="centered">
+    			<h2> Individual</h2>
+
+    			<p> Position: </p>
+    			<p> Projects:</p>
+    	</div></div>
+
+    		<div class = "split right">
+    		<div class="centered">
+    			<h2> Project</h2>
+    			<img src="graph1.jpg">
+    			<p> Outsourcing Percentage:</p>
+    			<p> High Risk Individuals:</p>
+    			<table style="width:100%">
+    			<tr>
+    				<th> Name</th>
+    				<th> Risk of Leaving</th>
+    				<th> Impact of Leaving</th>
+    				<th> Length of Employment</th>
+
+
+
+    				</tr>
+    				<tr>
+    				<td>
+    					seb</td>
+    					<td>60%</td>
+    					<td> bad!</td>
+    					<td> 12 days</td>
+    				</tr>
+    			</table>
+    	</div></div>
+
+    </body
+
+
+</body>
+</html>
