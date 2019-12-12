@@ -1,9 +1,10 @@
 # Laing O'Rourke Social Network Project
-# This is an improvement on the previous prototype developed by the 2019 ENGG4064 JFC Team
+This is an improvement on the previous prototype developed by the 2019 ENGG4064 JFC Team
 
 # Update 2019-2020
+Improvements to be made
+  - Eveness fucntion, account for multiple receivers from one sender
 
-# END YOUR LIFE TONY
 
 
 
