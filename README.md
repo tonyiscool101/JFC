@@ -13,7 +13,6 @@ Team Members:
 Improvements to be made
   - eveness.py: account for multiple receivers from one sender
   - makeNetwork.py: check the "Catch for sending to self" if it works, if len(temp)<2
-  - edit 3
 
 
 
