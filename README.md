@@ -1,6 +1,8 @@
 # Laing O'Rourke Social Network Project
 This is an improvement on the previous prototype developed by the 2019 ENGG4064 JFC Team.
+
 Team Members:
+
  - Tony Xiao
  - Jay Hin Yip
  - Rashid AL-Naamani
