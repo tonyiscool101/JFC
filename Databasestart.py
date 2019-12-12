@@ -2,6 +2,10 @@
 
 import pandas as pd
 import numpy as np
+from evenness import evenness
+from makeNetwork import makeNetwork
+from highCostIdentifier import highCostIdentifier
+from hiPoIdentifier import Responsiveness
 
 data = pd.read_excel('SNA_DATA.xlsx')
 
