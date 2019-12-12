@@ -31,7 +31,7 @@ def Responsiveness(target, timeLimit, df):
     dateList = []
     for serialNum in df['SerialNumber']:
 
-        dtObj = dt.datetime.strptime(serialNum[:6], '%y%m%d')
+        dtObj = dt.datetime.strptime(serialNum[:6], '%y%m%d') #why why oh why is this here you retardds
         dtObj = int(serialNum[:6])
         dateList.append(dtObj)
 
