@@ -16,6 +16,7 @@ uniqueRecipientList = [n for n in recipientlist if n not in senderlist]
 ID_list = senderlist + uniqueRecipientList
 
 with open('employee_file.csv', mode='w') as employee_file:
+    employee_writer = csv.writer(employee_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
     employee_writer.writerow([ID_list])
 
-    
+
