@@ -16,11 +16,12 @@ recipientlist = data['Recipient'].unique().tolist()
 uniqueRecipientList = [n for n in recipientlist if n not in senderlist]
 ID_list = senderlist + uniqueRecipientList
 
-with open('employee_file.csv', mode='w') as employee_file:
-    fieldnames = ['ID_list']
-    writer.writeheader()
-    employee_writer = csv.writer(employee_file, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-    for i in range len(ID_list)
-    employee_writer.writerow([ID_list])
+bigList = []
+bigList.append(ID_list)
+with open("output.csv", mode="w", newline='') as f:
+        writer = csv.writer(f)
+        writer.writerows(zip(*bigList))
+
+
 
 
