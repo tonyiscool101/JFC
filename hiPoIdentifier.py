@@ -78,5 +78,9 @@ def Responsiveness(target, timeLimit, df):
                             break
     
     # return total response rate
-    response = responseCount/recievedCount
+    if recievedCount == 0:
+        response = 1
+    else:
+        response = responseCount/recievedCount
+
     return response
