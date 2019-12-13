@@ -16,6 +16,10 @@ recipientlist = data['Recipient'].unique().tolist()
 uniqueRecipientList = [n for n in recipientlist if n not in senderlist]
 ID_list = senderlist + uniqueRecipientList
 
+print(np.shape(uniqueRecipientList))
+print(np.shape(senderlist))
+print(np.shape(ID_list))
+
 bigList = []
 
 responselist = []
