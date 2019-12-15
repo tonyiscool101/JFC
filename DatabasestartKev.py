@@ -11,7 +11,7 @@ df = df.drop_duplicates('Sender', keep='first')
 df2 = xls.parse(xls.sheet_names[0])
 df2 = df2.drop_duplicates('Recipient', keep='first')
 
-# Create sender and recipent and its respective office lists
+# Create sender and recipent and its respective office & job title lists
 senderboys= []
 recipientboth = []
 
@@ -26,7 +26,7 @@ recipientboth.append(df2['RecipientsJobTitle'].tolist())
 uniqueRecipientList = [n for n in zip(*recipientboth) if n not in zip(*senderboys)]
 uniqueRecipientList2 = list(map(list, zip(*uniqueRecipientList)))
 
-# Transpose ID list from vector to a list in 2 columns
+# Transpose ID list from vector to a list into 3 columns
 ID_list = np.hstack((senderboys,uniqueRecipientList2))
 print(ID_list)
 bigList = []
