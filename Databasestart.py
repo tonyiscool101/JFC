@@ -24,8 +24,9 @@ bigList = []
 
 responselist = []
 for i in range(2):
-        #(G, labels, edgeThicc,n_nodes) = makeNetwork(str(ID_list[i]), 'Local', data)
-
+        (G, labels, edgeThicc,n_nodes,NWL) = makeNetwork(str(ID_list[i]), 'Local', data)
+        print(type(NWL))
+        print(NWL)
         # Find the responsiveness and store in  a string
         response = Responsiveness(str(ID_list[i]), 2, data)
         responselist.append(response)

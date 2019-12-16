@@ -24,12 +24,12 @@ def successionPlanner(target, df, n):
     '''
     # create targets network (implicitly assuming best recplacements are gonna be in same department)
     # but should probably be 'global' -> run once -> stored in db -> queried when needed
-    (targetG, labels, edgeThicc,n_nodes) = makeNetwork(target, 'Local', df)
+    (targetG, labels, edgeThicc,n_nodes,NWL) = makeNetwork(target, 'Local', df)
 
     # make the local networks of everyone in the targets local network
     localNets = []
     for node in targetG.nodes():
-        (localG, labels, edgeThicc,n_nodes) = makeNetwork(node, 'Local', df)
+        (localG, labels, edgeThicc,n_nodes,NWL) = makeNetwork(node, 'Local', df)
         localNets.append(localG)
 
 

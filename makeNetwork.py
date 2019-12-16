@@ -89,4 +89,5 @@ def makeNetwork(target, level, df):
     edges = G.edges()
     edgeThicc = [G[u][v]['weight'] for u,v in edges]
     n_nodes = (len(G.nodes()))
-    return (G, labels, edgeThicc, n_nodes)
+    return (G, labels, edgeThicc, n_nodes,nodeWeightList)
+4

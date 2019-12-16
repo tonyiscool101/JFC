@@ -8,6 +8,8 @@ tempfile = NamedTemporaryFile(mode='w', delete=False)
 
 fields = ['ID', 'Branch', 'Jobtitle', 'Response', 'Evenness', 'Succession String']
 
+
+
 with open(filename, 'r') as csvfile, tempfile:
     reader = csv.DictReader(csvfile, fieldnames=fields)
     writer = csv.DictWriter(tempfile,  lineterminator='\n', fieldnames=fields)
@@ -16,6 +18,8 @@ with open(filename, 'r') as csvfile, tempfile:
             row['Branch'], row['Jobtitle'] = 'bpo', 'sda'
         row = {'ID': row['ID'], 'Branch': row['Branch'], 'Jobtitle': row['Jobtitle'],'Response':row['Response'], 'Evenness':row['Evenness'], 'Succession String': row['Succession String']}
         print(row)
+
         writer.writerow(row)
+
 
 shutil.move(tempfile.name, diledame)
