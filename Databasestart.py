@@ -23,16 +23,22 @@ print(np.shape(ID_list))
 bigList = []
 
 responselist = []
-for i in range(len(ID_list)):
+for i in range(2):
         #(G, labels, edgeThicc,n_nodes) = makeNetwork(str(ID_list[i]), 'Local', data)
 
         # Find the responsiveness and store in  a string
         response = Responsiveness(str(ID_list[i]), 2, data)
         responselist.append(response)
+        print(response)
 
 bigList.append(ID_list)
 bigList.append(responselist)
-
+ID_list1 = np.transpose(ID_list)
+print(ID_list1)
 with open("employee_ID.csv", mode="w", newline='') as f:
-        writer = csv.writer(f)
-        writer.writerows(zip(*bigList))
+        fieldnames = ['ID','Response']
+        writer = csv.DictWriter(f,fieldnames=fieldnames)
+        writer.writeheader()
+
+        for i in range(len(responselist)):
+                writer.writerow({'ID': ID_list1[i],'Response': responselist[i]})
