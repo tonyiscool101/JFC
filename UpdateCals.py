@@ -39,20 +39,18 @@ for i in range(len(ID)):
         print(str(evennesses))
         evenesslist.append(evennesses)
 
-
-
 with open(filename, 'r') as csvfile, tempfile:
             reader = csv.DictReader(csvfile, fieldnames=fields)
             writer = csv.DictWriter(tempfile, lineterminator='\n', fieldnames=fields)
-            for i in range(len(ID)):
-                for row in reader:
+            for row in reader:
+                for i in range(len(ID)):
                     if row['ID'] == str(ID[i]):
                             row['Response'], row['Evenness'], row['NWL'] = responselist[i],evenesslist[i], NWLlist[i]
                     row = {'ID': row['ID'], 'Branch': row['Branch'], 'Jobtitle': row['Jobtitle'],
                             'Response': row['Response'], 'Evenness': row['Evenness'], 'NWL': row['NWL']}
-                    print(row)
 
-                    writer.writerow(row)
+
+                writer.writerow(row)
 
 
 shutil.move(tempfile.name, diledame)
