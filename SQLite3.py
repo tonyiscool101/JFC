@@ -1,4 +1,5 @@
-import sqlite3
+import mysql
+import 
 import pandas as pd
 import numpy as np
 
@@ -33,7 +34,7 @@ ID_list = np.hstack((senderboys,uniqueRecipientList2)) # adds senderboys and uni
 
 ID_list1 = list(map(list, zip(*ID_list)))#transpose ID_list into 3 columns and 1800ish rows
 print(ID_list1)
-conn = sqlite3.connect('Bigboy.db')
+conn = mysql.connect('Bigboy.db')
 
 
 c = conn.cursor()
