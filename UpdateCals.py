@@ -39,6 +39,17 @@ for i in range(len(ID)):
         print(str(evennesses))
         evenesslist.append(evennesses)
 
+
+        #(succCandidates, succLabels) = successionPlanner(str(ID[i]), data, candidates)
+        #succString =[]
+        #for b in range(candidates - 1):
+                #succString.append(succCandidates[b][0])
+
+                #print(succString)
+
+        #succstringlist.append(succString)
+        #print(succstringlist)
+
 with open(filename, 'r') as csvfile, tempfile:
             reader = csv.DictReader(csvfile, fieldnames=fields)
             writer = csv.DictWriter(tempfile, lineterminator='\n', fieldnames=fields)
