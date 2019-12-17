@@ -8,8 +8,9 @@ db = pymysql.connect(
     passwd= "root",
     database="testdatabase",
 autocommit = True)
+
 mycursor = db.cursor()
-#mycursor.execute("CREATE DATABASE NWdatabase")
+mycursor.execute("CREATE DATABASE NWdatabase")
 
 nwdb = pymysql.connect(
     host = "localhost",
@@ -26,23 +27,28 @@ nwcursor = nwdb.cursor()
 mycursor.execute("SELECT ID FROM SIMPLEID")
 IDlist =[]
 for x in mycursor:
-    IDlist.append(x)
+    IDlist.append(x[0])
 print(IDlist)
 
 def CreateNWtable(ID):
-    return "CREATE TABLE " + ID + " (TargetID VARCHAR(50) PRIMARY KEY, Weight int)"
+    return "CREATE TABLE TABLE" + ID + " (TargetID VARCHAR(50) PRIMARY KEY, Weight int)"
 
 def POPNWLTable(ID):
-    return "INSERT INTO " + ID + " (TargetID, Weight) VALUES(%s,%s)"
-print(CreateNWtable(IDlist[0][0]))
-for i in range(1):
-    nwcursor.execute(CreateNWtable(str('018e557efb44ffa6def383460b26f8fa')))
+    return "INSERT INTO TABLE" + ID + " (TargetID, Weight) VALUES(%s,%s)"
 
-"""for i in range(len(IDlist)):
-    (G, labels, edgeThicc, n_nodes, NWL) = makeNetwork(str(IDlist[i][0]), 'Local', data)
+print(CreateNWtable(IDlist[0]))
+print((POPNWLTable(IDlist[0])))
+
+for i in range(len(IDlist)):
+    nwcursor.execute(CreateNWtable(str(IDlist[i])))
+    (G, labels, edgeThicc, n_nodes, NWL) = makeNetwork(str(IDlist[i]), 'Local', data)
+    print(NWL)
     for j in range(len(NWL)):
         print(NWL[j])
-        nwcursor.execute(POPNWLTable(IDlist[i][0]), (str(NWL[j][0]), NWL[j][2]))"""
+        if str(IDlist[i]) == (str(NWL[j][0])):
+                nwcursor.execute(POPNWLTable(IDlist[i]), (str(NWL[j][1]), NWL[j][2]))
+        else:
+                nwcursor.execute(POPNWLTable(IDlist[i]), (str(NWL[j][0]), NWL[j][2]))
 
 
-
+x
