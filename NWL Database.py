@@ -27,23 +27,22 @@ mycursor.execute("SELECT ID FROM SIMPLEID")
 IDlist =[]
 for x in mycursor:
     IDlist.append(x)
+print(IDlist)
 
-AMOUNT = 1
 def CreateNWtable(ID):
     return "CREATE TABLE " + ID + " (TargetID VARCHAR(50) PRIMARY KEY, Weight int)"
 
 def POPNWLTable(ID):
-    return "INSERT INTO" + ID + "(TargetID, Weight) VALUES(%s,%s)"
+    return "INSERT INTO " + ID + " (TargetID, Weight) VALUES(%s,%s)"
 print(CreateNWtable(IDlist[0][0]))
-#for i in range(len(IDlist)):
-   # nwcursor.execute(CreateNWtable(str(IDlist[i][0])))
-nwcursor.execute("INSERT INTO ")
+for i in range(1):
+    nwcursor.execute(CreateNWtable(str('018e557efb44ffa6def383460b26f8fa')))
 
-for i in range(len(IDlist)):
+"""for i in range(len(IDlist)):
     (G, labels, edgeThicc, n_nodes, NWL) = makeNetwork(str(IDlist[i][0]), 'Local', data)
     for j in range(len(NWL)):
         print(NWL[j])
-        nwcursor.execute(POPNWLTable(IDlist[i][0]), (str(NWL[j][0]), NWL[j][2]))
+        nwcursor.execute(POPNWLTable(IDlist[i][0]), (str(NWL[j][0]), NWL[j][2]))"""
 
 
 
