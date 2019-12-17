@@ -1,6 +1,7 @@
 import mysql.connector
 import pandas as pd
 import numpy as np
+
 db = mysql.connector.connect(
     host = "localhost",
     user = "root",
@@ -39,9 +40,8 @@ print(ID_list)
 
 ID_list1 = list(map(list, zip(*ID_list)))#transpose ID_list into 3 columns and 1800ish rows
 
-array = [('value1', 'value2', 'value3'),('value1', 'value2', 'value3'),('value1', 'value2', 'value3')]
 mycursor = db.cursor()
-mycursor.execute("CREATE TABLE SIMPLEID (ID VARCHAR(50) PRIMARY KEY, Branch VARCHAR(100)  , Jobtitle VARCHAR(100))")
+mycursor.execute("CREATE TABLE SIMPLEID (ID VARCHAR(50) PRIMARY KEY, Branch VARCHAR(100), Jobtitle VARCHAR(100))")
 #mycursor.execute("INSERT INTO IDLIST (ID, Branch,Jobtitle,Response,Evenness) VALUES (%s,%s,%s,%s,%s)", ("d7e68a0d48f04fbaa78dbc6ed7a28e9e","North Sydney - Mount Street","DIGITAL ENGINEER LEADZ",0.71,0.84))
 
 #mycursor.execute("ALTER TABLE SIMPLEID CHANGE BRANCH BRANCH VARCHAR(100)")
