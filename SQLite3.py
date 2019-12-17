@@ -1,5 +1,5 @@
 import mysql
-import 
+import mysql.connector
 import pandas as pd
 import numpy as np
 
@@ -34,7 +34,7 @@ ID_list = np.hstack((senderboys,uniqueRecipientList2)) # adds senderboys and uni
 
 ID_list1 = list(map(list, zip(*ID_list)))#transpose ID_list into 3 columns and 1800ish rows
 print(ID_list1)
-conn = mysql.connect('Bigboy.db')
+conn = mysql.connector.connect('Bigboy.db')
 
 
 c = conn.cursor()
