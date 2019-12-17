@@ -1,8 +1,5 @@
 import pandas as pd
-import csv
 import numpy as np
-from makeNetwork import makeNetwork
-import mysql.connector
 import pymysql
 from evenness import evenness
 
