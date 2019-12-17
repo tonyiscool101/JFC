@@ -8,7 +8,6 @@ import pandas as pd
 import networkx as nx
 import matplotlib.pyplot as plt
 import heapq, operator, pprint, time, matplotlib, community
-from community import community_louvain
 from modularity import modularity
 import numpy as np
 from simrank import simrank
