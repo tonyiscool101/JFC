@@ -222,17 +222,17 @@
     </state>
     <state width="1224" height="185" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1576558421106" />
     <state width="1348" height="281" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1576636073360" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1576623122014">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1576723001162">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="172" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1576556449074" />
-    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1576537090436" />
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1576723001162" />
     <state x="184" y="0" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1576623122014" />
-    <state x="378" y="224" key="com.intellij.ide.util.TipDialog" timestamp="1576623109337">
-      <screen x="0" y="0" width="1368" height="872" />
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1576722979056">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="354" y="175" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1576547905754" />
-    <state x="378" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1576541883759" />
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1576722979056" />
     <state x="378" y="224" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1576623109337" />
     <state x="348" y="60" width="673" height="813" key="search.everywhere.popup" timestamp="1576636216198">
       <screen x="0" y="0" width="1368" height="872" />
