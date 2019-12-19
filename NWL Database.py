@@ -38,7 +38,7 @@ def POPNWLTable(ID):
 
 print(CreateNWtable(IDlist[0]))
 print((POPNWLTable(IDlist[0])))
-joe = 0
+
 for i in range(len(IDlist)):
     nwcursor.execute(CreateNWtable(str(IDlist[i])))
     (G, labels, edgeThicc, n_nodes, NWL) = makeNetwork(str(IDlist[i]), 'Local', data)
@@ -49,7 +49,5 @@ for i in range(len(IDlist)):
                 nwcursor.execute(POPNWLTable(IDlist[i]), (str(NWL[j][1]), NWL[j][2])) # This code also adds duplicate edges together and combines them into one weight
         else:
                 nwcursor.execute(POPNWLTable(IDlist[i]), (str(NWL[j][0]), NWL[j][2]))
-    joe = joe +1
-    print(joe)
 
 

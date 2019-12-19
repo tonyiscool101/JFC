@@ -12,6 +12,7 @@ from community import community_louvain
 from modularity import modularity
 import numpy as np
 from simrank import simrank
+import collections as cl
 from makeNetwork import makeNetwork
 
 

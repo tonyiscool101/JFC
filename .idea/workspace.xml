@@ -28,7 +28,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Python.BranchDatabaseStart">
+=======
+  <component name="RunManager" selected="Python.BranchperID">
+>>>>>>> 2551d7970feb78db4f8604876a4b9fc86e85d1fa
     <configuration name="Add Responsiveness" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="JFC" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -50,7 +54,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="BranchDatabaseStart" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="BranchperID" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> 2551d7970feb78db4f8604876a4b9fc86e85d1fa
       <module name="JFC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -62,7 +70,11 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BranchDatabaseStart.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/BranchperID.py" />
+>>>>>>> 2551d7970feb78db4f8604876a4b9fc86e85d1fa
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -71,7 +83,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Impactreccomendertest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Call NWdatabase" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="JFC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -83,7 +95,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Impactreccomendertest.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Call NWdatabase.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -113,7 +125,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+<<<<<<< HEAD
     <configuration name="impactreccomenderfix" type="PythonConfigurationType" factoryName="Python" temporary="true">
+=======
+    <configuration name="testy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+>>>>>>> 2551d7970feb78db4f8604876a4b9fc86e85d1fa
       <module name="JFC" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -125,7 +141,11 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+<<<<<<< HEAD
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/impactreccomenderfix.py" />
+=======
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/testy.py" />
+>>>>>>> 2551d7970feb78db4f8604876a4b9fc86e85d1fa
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -136,11 +156,19 @@
     </configuration>
     <recent_temporary>
       <list>
+<<<<<<< HEAD
         <item itemvalue="Python.BranchDatabaseStart" />
         <item itemvalue="Python.Add Responsiveness" />
         <item itemvalue="Python.impactreccomenderfix" />
         <item itemvalue="Python.Impactreccomendertest" />
         <item itemvalue="Python.NWL Database" />
+=======
+        <item itemvalue="Python.BranchperID" />
+        <item itemvalue="Python.testy" />
+        <item itemvalue="Python.Call NWdatabase" />
+        <item itemvalue="Python.NWL Database" />
+        <item itemvalue="Python.Add Responsiveness" />
+>>>>>>> 2551d7970feb78db4f8604876a4b9fc86e85d1fa
       </list>
     </recent_temporary>
   </component>
@@ -174,29 +202,53 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1576534890202" />
+<<<<<<< HEAD
     <state width="1334" height="296" key="GridCell.Tab.0.bottom" timestamp="1576735279734">
+=======
+    <state x="465" y="191" key="FileChooserDialogImpl" timestamp="1576635844885">
+>>>>>>> 2551d7970feb78db4f8604876a4b9fc86e85d1fa
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1224" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1576722551219" />
+    <state x="465" y="191" key="FileChooserDialogImpl/0.0.1368.872@0.0.1368.872" timestamp="1576635844885" />
+    <state width="1348" height="227" key="GridCell.Tab.0.bottom" timestamp="1576639116860">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1075" height="147" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1576622942196" />
     <state width="1345" height="192" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1576547477708" />
+<<<<<<< HEAD
     <state width="1334" height="296" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1576735279734" />
     <state width="1334" height="296" key="GridCell.Tab.0.center" timestamp="1576735279734">
+=======
+    <state width="1348" height="227" key="GridCell.Tab.0.bottom/0.0.1368.872@0.0.1368.872" timestamp="1576639116860" />
+    <state width="1348" height="227" key="GridCell.Tab.0.center" timestamp="1576639116860">
+>>>>>>> 2551d7970feb78db4f8604876a4b9fc86e85d1fa
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1224" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1576722551219" />
+    <state width="1075" height="147" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1576622942196" />
     <state width="1345" height="192" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1576547477708" />
+<<<<<<< HEAD
     <state width="1334" height="296" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1576735279734" />
     <state width="1334" height="296" key="GridCell.Tab.0.left" timestamp="1576735279734">
+=======
+    <state width="1348" height="227" key="GridCell.Tab.0.center/0.0.1368.872@0.0.1368.872" timestamp="1576639116860" />
+    <state width="1348" height="227" key="GridCell.Tab.0.left" timestamp="1576639116860">
+>>>>>>> 2551d7970feb78db4f8604876a4b9fc86e85d1fa
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1224" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1576722551218" />
+    <state width="1075" height="147" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1576622942196" />
     <state width="1345" height="192" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1576547477708" />
+<<<<<<< HEAD
     <state width="1334" height="296" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1576735279734" />
     <state width="1334" height="296" key="GridCell.Tab.0.right" timestamp="1576735279734">
+=======
+    <state width="1348" height="227" key="GridCell.Tab.0.left/0.0.1368.872@0.0.1368.872" timestamp="1576639116860" />
+    <state width="1348" height="227" key="GridCell.Tab.0.right" timestamp="1576639116860">
+>>>>>>> 2551d7970feb78db4f8604876a4b9fc86e85d1fa
       <screen x="0" y="0" width="1368" height="872" />
     </state>
-    <state width="1224" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1576722551219" />
+    <state width="1075" height="147" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1576622942196" />
     <state width="1345" height="192" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1576547477708" />
+<<<<<<< HEAD
     <state width="1334" height="296" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1576735279734" />
     <state width="667" height="278" key="GridCell.Tab.1.bottom" timestamp="1576730409381">
       <screen x="0" y="0" width="1368" height="872" />
@@ -235,5 +287,45 @@
     </state>
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1576543995053" />
     <state x="349" y="59" width="673" height="813" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1576729912003" />
+=======
+    <state width="1348" height="227" key="GridCell.Tab.0.right/0.0.1368.872@0.0.1368.872" timestamp="1576639116860" />
+    <state width="1348" height="281" key="GridCell.Tab.1.bottom" timestamp="1576636073360">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1224" height="185" key="GridCell.Tab.1.bottom/0.0.1280.680@0.0.1280.680" timestamp="1576558421106" />
+    <state width="1348" height="281" key="GridCell.Tab.1.bottom/0.0.1368.872@0.0.1368.872" timestamp="1576636073360" />
+    <state width="1348" height="281" key="GridCell.Tab.1.center" timestamp="1576636073360">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1224" height="185" key="GridCell.Tab.1.center/0.0.1280.680@0.0.1280.680" timestamp="1576558421106" />
+    <state width="1348" height="281" key="GridCell.Tab.1.center/0.0.1368.872@0.0.1368.872" timestamp="1576636073360" />
+    <state width="1348" height="281" key="GridCell.Tab.1.left" timestamp="1576636073360">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1224" height="185" key="GridCell.Tab.1.left/0.0.1280.680@0.0.1280.680" timestamp="1576558421106" />
+    <state width="1348" height="281" key="GridCell.Tab.1.left/0.0.1368.872@0.0.1368.872" timestamp="1576636073360" />
+    <state width="1348" height="281" key="GridCell.Tab.1.right" timestamp="1576636073360">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state width="1224" height="185" key="GridCell.Tab.1.right/0.0.1280.680@0.0.1280.680" timestamp="1576558421106" />
+    <state width="1348" height="281" key="GridCell.Tab.1.right/0.0.1368.872@0.0.1368.872" timestamp="1576636073360" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1576723001162">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="172" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1576556449074" />
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1576723001162" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1368.872@0.0.1368.872" timestamp="1576623122014" />
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog" timestamp="1576722979056">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="354" y="175" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1576547905754" />
+    <state x="378" y="187" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1576722979056" />
+    <state x="378" y="224" key="com.intellij.ide.util.TipDialog/0.0.1368.872@0.0.1368.872" timestamp="1576623109337" />
+    <state x="348" y="60" width="673" height="813" key="search.everywhere.popup" timestamp="1576636216198">
+      <screen x="0" y="0" width="1368" height="872" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1576543995053" />
+    <state x="348" y="60" width="673" height="813" key="search.everywhere.popup/0.0.1368.872@0.0.1368.872" timestamp="1576636216198" />
+>>>>>>> 2551d7970feb78db4f8604876a4b9fc86e85d1fa
   </component>
 </project>
