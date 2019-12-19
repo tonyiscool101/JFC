@@ -27,7 +27,7 @@ candidates = 4
 NWLlist = [] #List of Nodeweights
 IDs_Calculated = 2
 for i in range(len(ID)):
-        (G, labels, edgeThicc,n_nodes,NWL) = makeNetwork(str(ID[i]), 'Local', data)
+     3
         NWLlist.append(NWL)
         print(NWLlist)
         # Find the responsiveness and store in  a string
