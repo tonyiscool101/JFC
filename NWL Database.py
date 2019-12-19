@@ -45,12 +45,11 @@ for i in range(len(IDlist)):
     print(NWL)
     for j in range(len(NWL)):
         print(NWL[j])
-        if str(IDlist[i]) == (str(NWL[j][0])):
-                nwcursor.execute(POPNWLTable(IDlist[i]), (str(NWL[j][1]), NWL[j][2]))
+        if str(IDlist[i]) == (str(NWL[j][0])): #Nodeweightlist contains messages going both in and out of target node; this code selects the node that is not the target
+                nwcursor.execute(POPNWLTable(IDlist[i]), (str(NWL[j][1]), NWL[j][2])) # This code also adds duplicate edges together and combines them into one weight
         else:
                 nwcursor.execute(POPNWLTable(IDlist[i]), (str(NWL[j][0]), NWL[j][2]))
     joe = joe +1
     print(joe)
 
 
-x

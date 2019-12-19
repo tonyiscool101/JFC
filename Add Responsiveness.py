@@ -2,7 +2,6 @@ import pandas as pd
 import csv
 import numpy as np
 from makeNetwork import makeNetwork
-import mysql.connector
 import pymysql
 from hiPoIdentifier import Responsiveness
 
@@ -30,8 +29,8 @@ IDlist =[]
 for x in mycursor:
     IDlist.append(x[0])
 
-#mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN Response float")
- def returnresponse(ID):
+mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN Response float")
+def returnresponse(ID):
     return "SELECT Response FROM SIMPLEID WHERE ID = " + "'" + ID + "'"
 mycursor.execute(returnresponse(IDlist[3]))
 for x in mycursor:

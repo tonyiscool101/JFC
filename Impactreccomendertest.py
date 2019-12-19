@@ -30,8 +30,8 @@ IDlist =[]
 for x in mycursor:
     IDlist.append(x[0])
 
-#mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN BetweenessCent float")
-#mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN ClosnessCent float")
+mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN BetweenessCent float")
+mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN ClosnessCent float")
 
 
 def reccotest(G):
@@ -42,6 +42,8 @@ def reccotest(G):
     closCentValues = list(closCent.values())
     betCentValues = list(betCent.values())
 
+    closCentValues.sort(reverse=True)
+    betCentValues.sort(reverse=True)
 
 
     return (closCentValues,betCentValues, betCent,closCent)
@@ -54,20 +56,23 @@ def sqlclosnesstatement(ID, Eveness):
 
 print('Calculating Network')
 
-
+bestboys = []
 
 for i in range(len(IDlist)):
     print('network calculated')
-    (G, labels, edgeThicc, n_nodes, NWL) = makeNetwork(str(IDlist[i]), 'Local', data)
+    (G, labels, edgeThicc, n_nodes, NWL) = makeNetwork(str(IDlist[i]), 'dskjfa', data)
     print('Calculating Closeness and Betweeness Centrality')
     (closCentValues, betCentValues, betCent, closCent) = reccotest(G)
     cutOff1 = 85
     target = str(IDlist[i])
     if closCent[target] > np.percentile(closCentValues, cutOff1) and betCent[target] > np.percentile(betCentValues, cutOff1):
         bill = 'invalid'
+        bestboys.append(target)
     else:
         bill = 'valid'
         print(NWL)
         print(betCent)
         print(closCent)
     print(bill)
+
+print(bestboys)
