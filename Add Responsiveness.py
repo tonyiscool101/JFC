@@ -20,7 +20,6 @@ responselist =[]
 
 mycursor = db.cursor()
 
-<<<<<<< HEAD
 mycursor.execute("SELECT ID FROM SIMPLEID")
 IDlist =[]
 for x in mycursor:
@@ -39,7 +38,6 @@ for i in range(len(IDs)):
         response = Responsiveness(str(IDs[i]), 2, data)
         responselist.append(response)
 
->>>>>>> 2551d7970feb78db4f8604876a4b9fc86e85d1fa
 def sqlevennessstatement(ID, Eveness):
             return "UPDATE SIMPLEID set Response =" + str(Eveness) + " where ID = " + "'" + ID + "'"
 

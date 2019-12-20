@@ -16,7 +16,7 @@ mycursor = db.cursor()
 IDs = ['0007f30bba2eef3df091a632e638320d','001ad6cfbf0481b2d29880161cbb3936','00bc23d8afb357d9340dd38f5226a61b']
 
 
-#mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN Evenness float")
+#mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN Evenness float") # Adds Eveness column to table
 
 evenesslist = [] # Caluculates evenness
 
@@ -51,14 +51,14 @@ ID_list1 = list(map(list, zip(*ID_list)))#transpose ID_list into 3 columns and 1
 
 
 
-for i in range(len(ID_list1)):
+for i in range(len(ID_list1)): #Calculates evenness for all ids
     evennesses = evenness(str(ID_list1[i][0]), data)
     print(str(evennesses))
     evenesslist.append(evennesses)
 
-def sqlevennessstatement(ID,Eveness):
+def sqlevennessstatement(ID,Eveness): #update evenness statement
     return "UPDATE SIMPLEID set Evenness ="+str(Eveness) + " where ID = " + "'" + ID +"'"
 
-for i in range(len(ID_list1)):
+for i in range(len(ID_list1)): #updates the SIMPLEID table
     mycursor.execute(sqlevennessstatement(str(ID_list1[i][0]),evenesslist[i]))
     db.commit()

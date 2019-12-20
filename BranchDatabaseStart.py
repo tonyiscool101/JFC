@@ -37,7 +37,7 @@ def callidbranch(branch): # statement for calling list of ids who are at that br
 def Createbranchtable(branch): #statement for making a table of that branch
     return "CREATE TABLE " + branch + " (TargetID VARCHAR(50) PRIMARY KEY)"
 
-def POPbranchTable(branch): #statment to insert attributes into branch
+def POPbranchTable(branch): #statment to insert rows into branch
     return "INSERT INTO " + branch + " (TargetID) VALUES(%s)"
 count = 0
 

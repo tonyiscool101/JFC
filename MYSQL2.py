@@ -41,14 +41,14 @@ print(ID_list)
 ID_list1 = list(map(list, zip(*ID_list)))#transpose ID_list into 3 columns and 1800ish rows
 
 mycursor = db.cursor()
-mycursor.execute("CREATE TABLE SIMPLEID (ID VARCHAR(50) PRIMARY KEY, Branch VARCHAR(100), Jobtitle VARCHAR(100))")
+mycursor.execute("CREATE TABLE SIMPLEID (ID VARCHAR(50) PRIMARY KEY, Branch VARCHAR(100), Jobtitle VARCHAR(100))") #creates SIMPLEID table
 #mycursor.execute("INSERT INTO IDLIST (ID, Branch,Jobtitle,Response,Evenness) VALUES (%s,%s,%s,%s,%s)", ("d7e68a0d48f04fbaa78dbc6ed7a28e9e","North Sydney - Mount Street","DIGITAL ENGINEER LEADZ",0.71,0.84))
 
 #mycursor.execute("ALTER TABLE SIMPLEID CHANGE BRANCH BRANCH VARCHAR(100)")
 #mycursor.execute("DESCRIBE IDLIST")
 #mycursor.executemany('INSERT IGNORE into SIMPLEID (ID, Branch, Jobtitle) VALUES(%s, %s, %s)', ID_list1)
 for i in range(len(ID_list1)):
-    mycursor.execute("INSERT INTO SIMPLEID (ID, Branch, Jobtitle) VALUES(%s,%s,%s)",(str(ID_list1[i][0]), str(ID_list1[i][1]), str(ID_list1[i][2])))
+    mycursor.execute("INSERT INTO SIMPLEID (ID, Branch, Jobtitle) VALUES(%s,%s,%s)",(str(ID_list1[i][0]), str(ID_list1[i][1]), str(ID_list1[i][2]))) #populates SIMPLEID table with id, branch and jobttiltle
     db.commit()
 
         #mycursor.execute("SELECT * FROM SIMPLEID WHERE ID = 'value1'")
