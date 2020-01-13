@@ -108,17 +108,23 @@ def profile():
             if i < 3:
                 topcol.append(rankedlads[i][0])
 
-        rankedlads = rankstatement(str(session['branch']), 'CLoseCent')
+        rankedlads = rankstatement(str(session['branch']), 'BetweenessCent')
         knowbro = []
         for i in range(len(rankedlads)):
             if i < 3:
                 knowbro.append(rankedlads[i][0])
 
-        rankedlads = rankstatement(str(session['branch']), 'BetweenessCent')
+        rankedlads = rankstatement(str(session['branch']), 'CLoseCent')
+        print(rankedlads)
+        reversedlads = rankedlads[::-1]
+        print(reversedlads)
         isobro = []
-        for i in range(len(rankedlads)):
+        for i in range(len(reversedlads)):
             if i < 3:
-                isobro.append(rankedlads[i][0])
+                isobro.append(reversedlads[i][0])
+
+
+
         return render_template('project.html', branch = str(session['branch']), topcol = topcol, knowbro = knowbro, isobro = isobro)
     return redirect(url_for('login'))
 
