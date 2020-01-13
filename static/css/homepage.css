@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Andada|Permanent+Marker|Raleway:300');
+html {
+  font-family: Arial;
+  font-size: 16px;
+  background: #FFFFFF;
+}
+
+img {
+  display: block;
+}
+
+table {
+  border: none;
+}
+
+td {
+  text-align: center;
+}
+
+.margin_top {
+  margin-top: 10%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.fa {
+  padding: 80px;
+  font-size: 60px;
+  width: 60px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 10%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-search {
+  background: #ECF0F1;
+  color: #3B5998;
+}
+
+.fa-globe {
+  background: #ECF0F1;
+  color: #55ACEE;
+}
+
+.fa-arrow-left {
+  background: #ECF0F1;
+  color: #dd4b39;
+}
+
+.fa-user {
+  background: #ECF0F1;
+  color: #007bb5;
+}
+
+.title_font {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  line-height: 2em;
+  color: black;
+  margin-bottom: 10cm;
+}
+
+.icon {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #0E0D0E;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FFF;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFF;
+  color: black;
+}
+
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+}
+
+  

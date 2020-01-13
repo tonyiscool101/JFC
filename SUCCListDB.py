@@ -10,7 +10,7 @@ db = pymysql.connect(
 autocommit = True)
 
 mycursor = db.cursor()
-mycursor.execute("CREATE DATABASE SLDB") #creates NW database
+#mycursor.execute("CREATE DATABASE SLDB") #creates NW database
 
 SCdb = pymysql.connect(
     host = "localhost",
@@ -43,6 +43,7 @@ print(CreateNWtable(IDlist[0]))
 candidates = 4
 
 for i in range(len(IDlist)):
+    
     sccursor.execute(CreateNWtable(str(IDlist[i]))) #Creates table
     (succCandidates, succLabels) = successionPlanner(str(IDlist[i]), data, candidates)
     print(POPNWLTable(IDlist[i]), str(succCandidates[0][0]), str(succCandidates[1][0]), str(succCandidates[2][0]))

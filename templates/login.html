@@ -1,101 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Laing O'Rourke HR Tool</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/css/login.css" type="text/css">
+
 </head>
-
-<style>
-body{
-  background-color: #ff0000
-}
-img.resize {
-  max-width:30%;
-  max-height:30%;
-}
-font-family: Arial;
-}
-.split{
-height: 100%;
-width: 50%;
-position: fixed;
-
-top: 0;
-overflow-x: hidden;
-padding-top:20px;
-
-}
-.left{
-left: 0;
-background-colour: #111;
-}
-
-.right{
-right:0;
-background-colour:red;
-
-
-}
-.centered{
-position: absolute;
-top: 60%;
-left: 50%;
-transform: translate(-50%,-50%);
-text-align: center;
-}
-</style>
 <body>
+<form method="POST">
 
-    <img class = "resize" src ="/static/images/logo.jpg" >
-    <form action="" method="post">
-        <p>
-            <label for="ID">ID</label>
-            <input type="text" name="ID">
-        </p>
-        <p>
-            <input type="submit">
-        </p>
-    </form>
-    {% if message %}
-        <p>{{ message }}</p>
-    {% endif %}
+<img src="/static/images/logo.jpg" class="img-login" alt="Quasar Logo" width="200">
 
-    <div class = "split left">
-    		<div class="centered">
-    			<h2> Individual</h2>
+<h1 class="title_font">Login</h1>
+<h2 class="normal_font">Please enter your login details</h2>
+<div class="login">
+<div class="login-screen">
+<div class="app-title">
+</div>
+<div class="login-form">
+<div class="control-group">
+				<input type="text" class="login-field" value="" placeholder="username" name="username">
+<label class="login-field-icon fui-user" for="login-name"></label></div>
+<div class="control-group">
+				<input type="password" class="login-field" value="" placeholder="password" name="password">
+<label class="login-field-icon fui-lock" for="login-pass"></label></div>
+<input type="submit" value="Log in" class="btn btn-primary btn-large btn-block">
 
-    			<p> Position: </p>
-    			<p> Projects:</p>
-    	</div></div>
+</div>
+</div>
+</div>
+<center>
+{% if message == ''%}
 
-    		<div class = "split right">
-    		<div class="centered">
-    			<h2> Project</h2>
-    			<img src="graph1.jpg">
-    			<p> Outsourcing Percentage:</p>
-    			<p> High Risk Individuals:</p>
-    			<table style="width:100%">
-    			<tr>
-    				<th> Name</th>
-    				<th> Risk of Leaving</th>
-    				<th> Impact of Leaving</th>
-    				<th> Length of Employment</th>
-
-
-
-    				</tr>
-    				<tr>
-    				<td>
-    					seb</td>
-    					<td>60%</td>
-    					<td> bad!</td>
-    					<td> 12 days</td>
-    				</tr>
-    			</table>
-    	</div></div>
-
-    </body
-
+{%else%}
+	<font color="red">{{error}}</font>
+{%endif%}
+</center>
+</form>
 
 </body>
 </html>

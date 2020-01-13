@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Andada|Permanent+Marker|Raleway:300');
+
+img {
+  display: block;
+}
+
+table {
+  border: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.format_table {
+  border-spacing: 100px 0;
+  vertical-align: center;
+  margin-top: 10%;
+}
+.inside_table {
+  border-spacing: 20px 0;
+  vertical-align: center;
+}
+
+.margin_top {
+  margin-top: 10%;
+}
+
+.normal_font {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  line-height: 2em;
+  color: black;
+  margin-bottom: 10cm;
+  text-align: left;
+}
+
+.right_align {
+  text-align: right;
+}
+
+.title_font {
+  font-family: 'Raleway', sans-serif;
+  font-size: 40px;
+  line-height: 2em;
+  color: black;
+  margin-bottom: 10cm;
+}
+
+.icon {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #0E0D0E;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FFF;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFF;
+  color: black;
+}
+
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+}
+
+#cent {
+  position:absolute;
+  float: center;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 35%;
+}
+
+.middle_box {
+	background-color: #ECF0F1;
+	border-radius: 10%;
+	width: 30%;
+	height: 70%;
+}
+
+.icon {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: black;
+}
