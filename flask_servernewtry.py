@@ -101,7 +101,20 @@ def lookupstatment(branch):
 @app.route('/project')
 def profile():
     if g.user:
-        return render_template('project.html',name=str(session['user']), branch = str(session['branch']))
+
+        #GET BRANCH
+
+        #SORT BY BRANCH
+
+        #SORT BY EIGCENT
+
+        #PICK TOP 5 EIGCENT
+
+        #STORE IN TOPCOL
+
+
+        topcol = ['a','b', 'c']
+        return render_template('project.html', branch = str(session['branch']), topcol = topcol)
     return redirect(url_for('login'))
 
 
