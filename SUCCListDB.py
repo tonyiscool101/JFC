@@ -30,23 +30,36 @@ mycursor.execute("SELECT ID FROM SIMPLEID")
 IDlist =[]
 for x in mycursor:
     IDlist.append(x[0])
-print(IDlist)
+print(len(IDlist))
 
-def CreateNWtable(ID): #statement for making a table of that id (the nw is added because for some reason some id strings were unable to be made into table names directly; to fix this we added nw before all the ids as explained above)
+def CreateSCtable(ID): #statement for making a table of that id (the nw is added because for some reason some id strings were unable to be made into table names directly; to fix this we added nw before all the ids as explained above)
     return "CREATE TABLE sc" + ID + " (Candidate1 varchar(100), Candidate2 varchar(100), Candidate3 varchar(100) )"
 
-def POPNWLTable(ID):#statment to insert rows into network list
+def POPSCTable(ID):#statment to insert rows into network list
     return "INSERT INTO sc" + ID + " (Candidate1, Candidate2, Candidate3) VALUES(%s,%s,%s)"
 
-print(CreateNWtable(IDlist[0]))
+def Checktable(ID): #statement to check if table exists
+    return "SHOW TABLES LIKE " +"'" + "sc" + str(ID)+ "'"
+
+
+print(Checktable(IDlist[0]))
+sccursor.execute(Checktable('llcoolj'))
+for x in sccursor:
+     print(x)
 
 candidates = 4
-
+count = 0
 for i in range(len(IDlist)):
+    sccursor.execute(Checktable(IDlist[i]))
+    print(Checktable(IDlist[i]))
+    result = sccursor.fetchone()
+    if result:
+        print('cool')
+    else:
+        sccursor.execute(CreateSCtable(str(IDlist[i])))  # Creates table
+        (succCandidates, succLabels) = successionPlanner(str(IDlist[i]), data, candidates)
+        sccursor.execute(POPSCTable(IDlist[i]),
+                         (str(succCandidates[0][0]), str(succCandidates[1][0]), str(succCandidates[2][0])))
+    count += 1
 
-    sccursor.execute(CreateNWtable(str(IDlist[i]))) #Creates table
-    (succCandidates, succLabels) = successionPlanner(str(IDlist[i]), data, candidates)
-    print(POPNWLTable(IDlist[i]), str(succCandidates[0][0]), str(succCandidates[1][0]), str(succCandidates[2][0]))
-
-    sccursor.execute(POPNWLTable(IDlist[i]), (str(succCandidates[0][0]), str(succCandidates[1][0]), str(succCandidates[2][0])))
-
+print(count)
