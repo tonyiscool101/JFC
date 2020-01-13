@@ -30,8 +30,8 @@ IDlist =[]
 for x in mycursor:
     IDlist.append(x[0])
 
-#mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN BetweenessCent float")
-#mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN ClosenessCent float")
+mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN BetweenessCent float")
+mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN ClosCent float")
 mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN EigCent float")
 
 
@@ -57,7 +57,7 @@ def sqlbetweenesstatement(ID, Eveness):
     return "UPDATE SIMPLEID set BetweenessCent =" + str(Eveness) + " where ID = " + "'" + ID + "'"
 
 def sqlclosnesstatement(ID, Eveness):
-    return "UPDATE SIMPLEID set ClosenessCent =" + str(Eveness) + " where ID = " + "'" + ID + "'"
+    return "UPDATE SIMPLEID set ClosCent =" + str(Eveness) + " where ID = " + "'" + ID + "'"
 def sqleigtatement(ID, Eveness):
     return "UPDATE SIMPLEID set EigCent =" + str(Eveness) + " where ID = " + "'" + ID + "'"
 
