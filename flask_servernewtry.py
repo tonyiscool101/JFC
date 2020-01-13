@@ -10,6 +10,7 @@ db = pymysql.connect(
     user = "root",
     passwd= "root",
     database="testdatabase",
+    cursorclass=pymysql.cursors.DictCursor,
 autocommit = True)
 
 cursor  = db.cursor()
