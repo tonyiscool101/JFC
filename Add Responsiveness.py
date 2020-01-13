@@ -13,28 +13,25 @@ db = pymysql.connect(
 autocommit = True)
 data = pd.read_excel('SNA_DATA.xlsx')
 
-IDs = ['0007f30bba2eef3df091a632e638320d',
-'001ad6cfbf0481b2d29880161cbb3936']
 
 responselist =[]
 
 mycursor = db.cursor()
 
-mycursor.execute("SELECT ID FROM SIMPLEID")
+mycursor.execute("SELECT ID FROM SIMPLEID") # Calls List of all ids
 IDlist =[]
 for x in mycursor:
     IDlist.append(x[0])
 
-mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN Response float")
-def returnresponse(ID):
+mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN Response float") # Adds response Column
+def returnresponse(ID): # Returns response column
     return "SELECT Response FROM SIMPLEID WHERE ID = " + "'" + ID + "'"
 mycursor.execute(returnresponse(IDlist[3]))
 for x in mycursor:
     print(x)
 =======
-#mycursor.execute("ALTER TABLE SIMPLEID ADD COLUMN Response int")
 
-for i in range(len(IDs)):
+for i in range(len(IDs)): #
         response = Responsiveness(str(IDs[i]), 2, data)
         responselist.append(response)
 
