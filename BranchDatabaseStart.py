@@ -32,26 +32,29 @@ for x in mycursor:
 branchlist = list(dict.fromkeys(branchlist)) #Drops duplicates from branchlist
 
 def callidbranch(branch): # statement for calling list of ids who are at that branch
-    return "SELECT ID FROM SIMPLEID WHERE BRANCH = " +"'" + branch +"'"
+    return "SELECT ID, BetweenessCent, ClosenessCent, EigCent FROM SIMPLEID WHERE BRANCH = " +"'" + branch +"'"
 
 def Createbranchtable(branch): #statement for making a table of that branch
-    return "CREATE TABLE " + branch + " (TargetID VARCHAR(50) PRIMARY KEY)"
+    return "CREATE TABLE " + branch + " (TargetID VARCHAR(50) PRIMARY KEY, BetweenessCent float, CLoseCent float, EigenvectorCent float)"
 
 def POPbranchTable(branch): #statment to insert rows into branch
-    return "INSERT INTO " + branch + " (TargetID) VALUES(%s)"
+    return "INSERT INTO " + branch + " (TargetID, BetweenessCent, CLoseCent, EigenvectorCent) VALUES(%s,%s,%s,%s)"
+
+
 count = 0
 
 uniquetableidlist = []
 
 badwords = ["-", "&", "(", ")", ",", "/"] #list of characters that will be ommited because they are invalid table names
 
+
 for i in range(len(branchlist)):
 
     mycursor.execute((callidbranch(str(branchlist[i])))) #calls list of ids who are at that branch
     uniquebranchids = [] #initalises vector of  ids that for each branchlist[i]
     for x in mycursor:
-        uniquebranchids.append(x[0]) #populates vector with list of people who are at that branch
-
+        uniquebranchids.append(x) #populates vector with list of people who are at that branch
+    print(uniquebranchids)
     count = count +1
     print(count)
     print(branchlist[i])
@@ -79,7 +82,7 @@ for i in range(len(branchlist)):
     print(tableidcreater)
     if tableidcreater in uniquetableidlist: #Checks if that branch id  is already in the list
         for j in range(len(uniquebranchids)):
-            brcursor.execute(POPbranchTable(tableidcreater), (str(uniquebranchids[j])))
+            brcursor.execute(POPbranchTable(tableidcreater), (str(uniquebranchids[j][0]),uniquebranchids[j][1],uniquebranchids[j][2],uniquebranchids[j][3]))
         print(uniquebranchids)
 
 
@@ -88,7 +91,7 @@ for i in range(len(branchlist)):
         brcursor.execute((Createbranchtable(str(tableidcreater)))) #creates table with that id name
 
         for j in range(len(uniquebranchids)):
-            brcursor.execute(POPbranchTable(tableidcreater), (str(uniquebranchids[j]))) #populates table with unique ids
+            brcursor.execute(POPbranchTable(tableidcreater), (str(uniquebranchids[j][0]),uniquebranchids[j][1],uniquebranchids[j][2],uniquebranchids[j][3])) #populates table with unique ids
 
 """
     print(branchlist[i])

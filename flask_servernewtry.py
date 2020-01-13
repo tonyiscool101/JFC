@@ -4,6 +4,7 @@ import os
 import pandas as pd
 import time
 import pymysql
+from Rankstatement import rankstatement
 
 db = pymysql.connect(
     host = "localhost",
@@ -22,7 +23,7 @@ nwdb = pymysql.connect(
     database="NWdatabase",
 autocommit = True)
 
-nwcursor = nwdb.cursor()
+#nwcursor = nwdb.cursor()
 # Assign the name of the application to 'app'
 app = Flask(__name__)
 
@@ -101,20 +102,24 @@ def lookupstatment(branch):
 @app.route('/project')
 def profile():
     if g.user:
+        rankedlads = rankstatement(str(session['branch']), 'EigenvectorCent')
+        topcol = []
+        for i in range(len(rankedlads)):
+            if i < 3:
+                topcol.append(rankedlads[i][0])
 
-        #GET BRANCH
+        rankedlads = rankstatement(str(session['branch']), 'CLoseCent')
+        knowbro = []
+        for i in range(len(rankedlads)):
+            if i < 3:
+                knowbro.append(rankedlads[i][0])
 
-        #SORT BY BRANCH
-
-        #SORT BY EIGCENT
-
-        #PICK TOP 5 EIGCENT
-
-        #STORE IN TOPCOL
-
-
-        topcol = ['a','b', 'c']
-        return render_template('project.html', branch = str(session['branch']), topcol = topcol)
+        rankedlads = rankstatement(str(session['branch']), 'BetweenessCent')
+        isobro = []
+        for i in range(len(rankedlads)):
+            if i < 3:
+                isobro.append(rankedlads[i][0])
+        return render_template('project.html', branch = str(session['branch']), topcol = topcol, knowbro = knowbro, isobro = isobro)
     return redirect(url_for('login'))
 
 

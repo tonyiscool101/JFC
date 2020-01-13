@@ -61,5 +61,6 @@ for i in range(len(IDlist)):
         sccursor.execute(POPSCTable(IDlist[i]),
                          (str(succCandidates[0][0]), str(succCandidates[1][0]), str(succCandidates[2][0])))
     count += 1
+    print(count)
 
 print(count)
