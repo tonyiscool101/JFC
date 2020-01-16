@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="/static/css/profile.css" type="text/css">
+<link rel="stylesheet" href="/static/css/project.css" type="text/css">
 </head>
 <body>
 
@@ -23,78 +23,128 @@
 	</td>
   </tr>
 </table>
-
-	<center>
-		<table class="format_table">
+<br>
+<br>
+<center>
+		<th align="right"><u><a class="title_font"><strong>{{branch}} Project Network</strong></a></th>
+			</u><br>
+			<br>
 			<td>
-				<table class="inside_table">
+				<img src="/static/images/north_sydney_mount_street.svg" class="img-login" alt="YourNetwork" width="800">
+			</td>
+<br>
+<br>
+	<tr>
+		<th align="right"><a class="title_font"><u><strong>Employees of Interest</strong></a></th>
+	</u></tr>
+		<table class="format_table">
+			<td class="normal_font"><strong>
+				<table class="inside_table", border = "0">
+					<col width= "200">
+					<col width = "200">
+					<col width = "500">
 					<tr>
-						<th align="right"><a class="title_font"><strong>Project:</strong></a></th>
-<<<<<<< HEAD
-						<th><a class="title_font" align = "left">{{branch}}</a></th>
-=======
-						<th><a class="title_font">Dartford<!--{{branch}}--></a></th>
->>>>>>> fcada6ea637d35bffc6f866a287ce543699ac403
-					</tr>
-					<tr>
-						<td align="middle"><a class="normal_font"><strong>Top collaborators 
+						<td align="middle", rowspan = "3">Top collaborators 
 						<br><div class="tooltip"><img src="/static/images/infoicon.png" class="img-login" width="20">
 						<span class="tooltiptext">Employees with the highest influence in your network</span></div>
-						</strong></a></td>
-
-						<td><a class="normal_font">
-						<b>
-						<ol>
-						<li>Rowan Braham</li>
-						<li>Nicole Nielson</li>
-						<li>Sam Nordson</li>
-						<!--<li>{{topcol[0]}}</li>
-						<li>{{topcol[1]}}</li>
-						<li>{{topcol[2]}}</li>-->
-						</ol>
-						</a></td>
+						</td>
+							<td>
+			
+								1. {{topcol[0]}}
+							</td>
+						<td> 
+								{{topcoljobs[0]}}
+						</td>
 					</tr>
 					<tr>
-						<td align="middle"><a class="normal_font"><strong>Knowledge brokers
+						<td>
+								2. {{topcol[1]}}
+						</td>
+						<td> 
+								{{topcoljobs[1]}}
+						</td>
+					</tr>
+					<tr>
+						<td>
+								3. {{topcol[2]}}
+						</td>
+						<td> 
+								{{topcoljobs[2]}}
+						</td>
+					</tr>
+							
+					<tr> <td>
+					<br/>
+					</td></tr>
+					
+					<tr>
+						<td align="middle", rowspan = "3">Knowledge brokers
 						<br><div class="tooltip"><img src="/static/images/infoicon.png" class="img-login" width="20">
 						<span class="tooltiptext">Top intermediaries that connect your network with others</span></div>
 						</strong></a></td>
 						
-						<td><a class="normal_font">
-						<b>
-						<ol>
-						<li>Richard Bryson</li>
-						<li>Jason Mord</li>
-						<li>Gephi Nesser</li>
-						<!--<li>{{knowbro[0]}}</li>
-						<li>{{knowbro[1]}}</li>
-						<li>{{knowbro[2]}}</li>-->
-						</a></td>
+						<td>
+							1. {{knowbro[0]}}
+							</td>
+							<td> 
+							{{knowbrojobs[0]}}
+						</td>
+						</tr>
+						<tr>
+						<td>
+							2. {{knowbro[1]}}
+							</td>
+							<td> 
+							{{knowbrojobs[1]}}
+							</td>
+						</tr>
+						<tr>
+						<td>
+							3. {{knowbro[2]}}
+							</td>
+							<td> 
+							{{knowbrojobs[2]}}
+						</td>
+					
 					</tr>
+					
+					<tr> <td>
+					<br/>
+					</td></tr>
+					
 					<tr>
-						<td align="middle"><a class="normal_font"><strong>Isolated individuals 
+						<td align="middle", rowspan = "3">Isolated individuals 
 						<br><div class="tooltip"><img src="/static/images/infoicon.png" class="img-login" width="20">
 						<span class="tooltiptext">Employees with few connections within the network</span></div>
 						</strong></a></td>
 						
-						<td><a class="normal_font">
-						<b>
-						<ol>
-						<li>Jessie Lorris</li>
-						<li>Eldrid Laigh</li>
-						<li>Jack Knight</li>
-						<!--<li>{{isobro[0]}}</li>
-						<li>{{isobro[1]}}</li>
-						<li>{{isobro[2]}}</li>-->
-						
-						</a></td>
-					</tr>			  
+						<td>
+							1. {{isobro[0]}}
+							</td>
+							<td> 
+							{{isobrojobs[0]}}
+						</td>
+						</tr>
+						<tr>
+						<td>
+							2. {{isobro[1]}}
+							</td>
+							<td> 
+							{{isobrojobs[1]}}
+							</td>
+						</tr>
+						<tr>
+						<td>
+							3. {{isobro[2]}}
+							</td>
+							<td> 
+							{{isobrojobs[2]}}
+						</td>
+					</tr>
 				</table>
-			</td>
-			<td>
-				<img src="/static/images/Gephi_Perth2.png" class="img-login" alt="GephiEx" width="400">
-			</td>
+			<strong></td>
 		</table>
-	</center>
+		</center>
+		
 </body>
 </html>

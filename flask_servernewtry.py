@@ -4,7 +4,9 @@ import os
 import pandas as pd
 import time
 import pymysql
+import numpy as np
 from Rankstatement import rankstatement
+from IDtoName import IDtoName
 
 db = pymysql.connect(
     host = "localhost",
@@ -23,13 +25,12 @@ nwdb = pymysql.connect(
     database="NWdatabase",
 autocommit = True)
 
-#nwcursor = nwdb.cursor()
+nwcursor = nwdb.cursor()
 # Assign the name of the application to 'app'
 app = Flask(__name__)
 
 # Key required for 'session'
 app.secret_key = os.urandom(24)
-
 
 #######################################################################
 # Login
@@ -73,7 +74,7 @@ def login():
             # Error message if doesnt log in
             error = 'Invalid Credentials, Please Try Again'
 
-    # Default render login.html   
+    # Default render login.html
     return render_template('login.html',error=error)
 
 #######################################################################
@@ -91,7 +92,13 @@ def before_request():
 @app.route('/homepage')
 def homepage():
     if g.user:
-        return render_template('homepage.html')
+        username = session['user']
+
+        #Replace underscores in branch name with spaces
+        userbranch = session['branch']
+        if "_" in userbranch:
+            userbranch = userbranch.replace("_", " ")
+        return render_template('homepage.html', branch = userbranch, name = username)
     return redirect(url_for('login'))
 def lookupstatment(branch):
    return 'SELECT *FROM branchdatabase.' + str(branch)
@@ -102,30 +109,57 @@ def lookupstatment(branch):
 @app.route('/project')
 def profile():
     if g.user:
-        rankedlads = rankstatement(str(session['branch']), 'EigenvectorCent')
+
+        #Replace underscores in branch name with spaces
+        userbranch = session['branch']
+        if "_" in userbranch:
+            userbranch = userbranch.replace("_", " ")
+
         topcol = []
-        for i in range(len(rankedlads)):
-            if i < 3:
-                topcol.append(rankedlads[i][0])
+        topcol1 = []
+        topcoljobs = []
+        rankedlads = rankstatement(str(session['branch']), 'EigenvectorCent')
+        for i in range(0,3):
+            topcol.append(rankedlads[i][0])
 
-        rankedlads = rankstatement(str(session['branch']), 'BetweenessCent')
+        for x in range(len(topcol)):
+            IDnamejob = IDtoName(topcol[x])
+            fullname = IDnamejob[0]
+            jobtitle = IDnamejob[1]
+            topcol1.append(fullname)
+            topcoljobs.append(jobtitle)
+
+
         knowbro = []
-        for i in range(len(rankedlads)):
-            if i < 3:
-                knowbro.append(rankedlads[i][0])
+        knowbro1 = []
+        knowbrojobs = []
+        rankedlads = rankstatement(str(session['branch']), 'BetweenessCent')
+        for i in range(0,3):
+            knowbro.append(rankedlads[i][0])
 
-        rankedlads = rankstatement(str(session['branch']), 'CLoseCent')
-        print(rankedlads)
-        reversedlads = rankedlads[::-1]
-        print(reversedlads)
+        for x in range(len(knowbro)):
+            IDnamejob = IDtoName(knowbro[x])
+            fullname = IDnamejob[0]
+            jobtitle = IDnamejob[1]
+            knowbro1.append(fullname)
+            knowbrojobs.append(jobtitle)
+
         isobro = []
-        for i in range(len(reversedlads)):
-            if i < 3:
-                isobro.append(reversedlads[i][0])
+        isobro1 = []
+        isobrojobs = []
+        rankedlads = rankstatement(str(session['branch']), 'CLoseCent')
+        reversedlads = rankedlads[::-1]
+        for i in range(0,3):
+            isobro.append(reversedlads[i][0])
 
+        for x in range(len(isobro)):
+            IDnamejob = IDtoName(isobro[x])
+            fullname = IDnamejob[0]
+            jobtitle = IDnamejob[1]
+            isobro1.append(fullname)
+            isobrojobs.append(jobtitle)
 
-
-        return render_template('project.html', branch = str(session['branch']), topcol = topcol, knowbro = knowbro, isobro = isobro)
+        return render_template('project.html', branch = userbranch, topcol = topcol1, topcoljobs = topcoljobs, knowbro = knowbro1, knowbrojobs = knowbrojobs, isobro = isobro1, isobrojobs = isobrojobs)
     return redirect(url_for('login'))
 
 
@@ -138,32 +172,39 @@ def search():
     if request.method == "POST":
         branch = request.form['branch']
 
-        #select database
-
+        #Check if branch exists in tabledatabase
         cursor.execute('SELECT table_name FROM information_schema.tables WHERE table_schema = \'branchdatabase\' AND TABLE_NAME = %s ', [branch])
         data = cursor.fetchall()
 
         branchfound = 1
-
-
-        print(len(data))
+        namedlist = []
         if len(data) == 1 and branchfound == 1:
             cursor.execute(lookupstatment(branch))
             data = cursor.fetchall()
+
+            #Create list of employee names from their IDs
+            employeelist = [d['TargetID'] for d in data]
+            for i in range(len(employeelist)):
+                IDnamejob = (IDtoName(employeelist[i]))
+                fullname = IDnamejob[0]
+                namedlist.append(fullname)
         else:
             branchfound = 0
 
-        return render_template('search.html', data = data, branchfound = branchfound)
+        datalength = len(namedlist)
+
+
+        return render_template('search.html', data = namedlist, datalen = datalength, branchfound = branchfound)
     return render_template('search.html')
     #return redirect(url_for('login'))
 
 #######################################################################
-# Employee Search
+# Interactive Map
 #######################################################################
-@app.route('/global_search')
+@app.route('/project_map')
 def global_search():
     if g.user:
-        return render_template('global_search.html')
+        return render_template('project_map.html')
     return redirect(url_for('login'))
 
 #######################################################################
@@ -201,7 +242,7 @@ def favicon():
 if __name__ == '__main__':
 
     # Load the database
-    print('Loading Webserver...')
+    #print('Loading Webserver...')
 
     # This is for debugging and searches for updated files whenever
     # the file is run. Auto refreshes the local server.

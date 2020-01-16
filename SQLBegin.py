@@ -1,8 +1,8 @@
-import mysql.connector
+import pymysql
 import pandas as pd
 import numpy as np
 
-db = mysql.connector.connect(
+db = pymysql.connect(
     host = "localhost",
     user = "root",
     passwd= "root",
@@ -36,9 +36,10 @@ uniqueRecipientList2 = list(map(list, zip(*uniqueRecipientList))) #transposes un
 
 # Transpose ID list from vector to a list into 3 columns
 ID_list = np.hstack((senderboys,uniqueRecipientList2)) # adds senderboys and uniquerecipient list to get a list of all unique IDs in the email database; is 3 rows and 1800ish columns
-print(ID_list)
+print('This is' +str(ID_list))
 
 ID_list1 = list(map(list, zip(*ID_list)))#transpose ID_list into 3 columns and 1800ish rows
+
 
 mycursor = db.cursor()
 mycursor.execute("CREATE TABLE SIMPLEID (ID VARCHAR(50) PRIMARY KEY, Branch VARCHAR(100), Jobtitle VARCHAR(100))") #creates SIMPLEID table

@@ -14,42 +14,51 @@
 		<font color="#0E0D0E">Someone fix this spaghetti table</font>
 	</th>
     <th rowspan="2" align="right" class="topnav">
-			<img src="/static/images/icon.jpg" class="img-responsive" alt="">
+		<img src="/static/images/icon.jpg" class="img-responsive" alt="">
 	</th>
-  </tr>
-  <tr>
+	</tr>
+	
+	<tr>
     <td class="topnav">
 		<a href="/homepage">Home</a>
 		<a href="/FAQ">FAQ</a>
 		<a href="/contact">Contact</a>
 		<a href="/about">About</a>
 	</td>
-  </tr>
+	</tr>
 </table>
-   
+
         <h1><center>Branch Lookup</center></h1>
+		
         <form class="example" method="post" action="" 
          style="margin:auto;max-width:600px">
-		 
 		 
             <input type="text" placeholder="Search branch name" name="branch">
             <button type="submit"><i class="fa fa-search"></i>
             </button>
         </form>
-        <p></p>
+		
         <center>
 		{% if branchfound == 1 %}
-        {% for item in data %}
+			{% for i in range(datalen) %}
+				<tr>
+					<td> {{data[i]}} </td>
+					</br>
+				</tr>
+			{% endfor %}
+		
+        <!--
+		{% for item in data %}
             <tr>
                 <td> {{item['TargetID']}} </td>
 				
                 </br>
             </tr>
         {% endfor %}
+		-->
 		{% elif branchfound == 0 %}
 			<font color="red">Branch does not exist, please check spelling</font>
 		{%endif%}
-        </center> 
-
+        </center>
     </body>
 </html>

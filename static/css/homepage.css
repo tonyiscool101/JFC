@@ -20,7 +20,7 @@ td {
 }
 
 .margin_top {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 body {
@@ -67,9 +67,15 @@ body {
 .title_font {
   font-family: 'Raleway', sans-serif;
   font-size: 40px;
-  line-height: 2em;
   color: black;
-  margin-bottom: 10cm;
+  text-transform: capitalize;
+}
+
+.title_mini {
+  font-family: 'Raleway', sans-serif;
+  font-size: 15px;
+  color: black;
+  text-transform: capitalize;
 }
 
 .icon {

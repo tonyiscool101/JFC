@@ -19,4 +19,3 @@ def rankstatement(branch, Category):
         dag.append(x)
     return dag
 
-print(rankstatement('dartford','BetweenessCent'))

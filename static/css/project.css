@@ -17,12 +17,12 @@ body {
 }
 
 .format_table {
-  border-spacing: 100px 0;
+  border-spacing: 5px 0;
   vertical-align: center;
-  margin-top: 10%;
+  margin-top: 0%;
 }
 .inside_table {
-  border-spacing: 50px 0;
+  border-spacing: 5px 0;
   vertical-align: center;
 }
 
@@ -45,10 +45,11 @@ body {
 
 .title_font {
   font-family: 'Raleway', sans-serif;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 2em;
   color: black;
   margin-bottom: 10cm;
+  text-transform: capitalize;
 }
 
 .icon {
@@ -104,45 +105,14 @@ body {
 	height: 70%;
 }
 
+.nowrap {
+  white-space: nowrap ;
+}
+
 .icon {
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   color: black;
-}
-
-/* CSS for search file */
-body {
-  font-family: Arial;
-}
-* {
-  box-sizing: border-box;
-}
-form.example input[type=text] {
-  padding: 10px;
-  font-size: 17px;
-  border: 1px solid grey;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-}
-form.example button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #2196F3;
-  color: white;
-  font-size: 17px;
-  border: 1px solid grey;
-  border-left: none;
-  cursor: pointer;
-}
-form.example button:hover {
-  background: #0b7dda;
-}
-form.example::after {
-  content: "";
-  clear: both;
-  display: table;
 }
 
 /* Tooltip container */
