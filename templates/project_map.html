@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<!--
 <html>
+
 <head>
-<link rel="stylesheet" href="/static/css/profile.css" type="text/css">
+<link rel="stylesheet" href="/static/css/project.css" type="text/css">
 </head>
+
+
 <body>
+
 
 <table cellspacing="0" cellpadding="0" width="100%" >
   <tr>
@@ -24,68 +27,87 @@
 	</td>
   </tr>
 </table>
--->
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Gephi: JavaScript GEXF Viewer</title>
-        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" type="text/css" href="/static/css/gexfjs.css" />
-        <link rel="stylesheet" type="text/css" href="/static/css/jquery-ui-1.10.3.custom.min.css" />
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script type="text/javascript">
-        // Fallback in case JQuery CDN isn't available
-            if (typeof jQuery == 'undefined') {
-                document.write(unescape("%3Cscript type='text/javascript' src='js/jquery-2.0.2.min.js'%3E%3C/script%3E"));
-            }
-        </script>
-        <script type="text/javascript" src="js/jquery.mousewheel.min.js"></script>
-        <script type="text/javascript" src="js/jquery-ui-1.10.3.custom.min.js"></script>
-        <script type="text/javascript" src="js/gexfjs.js"></script>
-        <script type="text/javascript" src="config.js"></script>
-    </head>
-    <body>
-        <div id="zonecentre" class="gradient">
-            <canvas id="carte" width="0" height="0"></canvas>
-            <ul id="ctlzoom">
-                <li>
-                    <a href="#" id="zoomPlusButton" title="S'approcher"> </a>
-                </li>
-                <li id="zoomSliderzone">
-                    <div id="zoomSlider"></div>
-                </li>
-                <li>
-                    <a href="#" id="zoomMinusButton" title="S'éloigner"> </a>
-                </li>
-                <li>
-                    <a href="#" id="lensButton"> </a>
-                </li>
-                <li>
-                    <a href="#" id="edgesButton"> </a>
-                </li>
-            </ul>
-        </div>
-        <div id="overviewzone" class="gradient">
-            <canvas id="overview" width="0" height="0"></canvas>
-        </div>
-        <div id="leftcolumn">
-            <div id="unfold">
-                <a href="#" id="aUnfold" class="rightarrow"> </a>
-            </div>
-            <div id="leftcontent"></div>
-        </div>
-        <div id="titlebar">
-            <div id="maintitle">
-                <h1><a href="http://gephi.org/" target="_blank" title="Made with Gephi">Gephi: JavaScript GEXF Viewer</a></h1>
-            </div>
-            <form id="recherche">
-                <input id="searchinput" class="grey" autocomplete="off" />
-                <input id="searchsubmit" type="submit" />
-            </form>
-        </div>
-        <ul id="autocomplete">
-        </ul>
-    </body>
-</html>
+<br>
+<br>
+
+<!-- START SIGMA IMPORTS -->
+<script src="../src/sigma.core.js"></script>
+<script src="../src/conrad.js"></script>
+<script src="../src/utils/sigma.utils.js"></script>
+<script src="../src/utils/sigma.polyfills.js"></script>
+<script src="../src/sigma.settings.js"></script>
+<script src="../src/classes/sigma.classes.dispatcher.js"></script>
+<script src="../src/classes/sigma.classes.configurable.js"></script>
+<script src="../src/classes/sigma.classes.graph.js"></script>
+<script src="../src/classes/sigma.classes.camera.js"></script>
+<script src="../src/classes/sigma.classes.quad.js"></script>
+<script src="../src/classes/sigma.classes.edgequad.js"></script>
+<script src="../src/captors/sigma.captors.mouse.js"></script>
+<script src="../src/captors/sigma.captors.touch.js"></script>
+<script src="../src/renderers/sigma.renderers.canvas.js"></script>
+<script src="../src/renderers/sigma.renderers.webgl.js"></script>
+<script src="../src/renderers/sigma.renderers.svg.js"></script>
+<script src="../src/renderers/sigma.renderers.def.js"></script>
+<script src="../src/renderers/webgl/sigma.webgl.nodes.def.js"></script>
+<script src="../src/renderers/webgl/sigma.webgl.nodes.fast.js"></script>
+<script src="../src/renderers/webgl/sigma.webgl.edges.def.js"></script>
+<script src="../src/renderers/webgl/sigma.webgl.edges.fast.js"></script>
+<script src="../src/renderers/webgl/sigma.webgl.edges.arrow.js"></script>
+<script src="../src/renderers/canvas/sigma.canvas.labels.def.js"></script>
+<script src="../src/renderers/canvas/sigma.canvas.hovers.def.js"></script>
+<script src="../src/renderers/canvas/sigma.canvas.nodes.def.js"></script>
+<script src="../src/renderers/canvas/sigma.canvas.edges.def.js"></script>
+<script src="../src/renderers/canvas/sigma.canvas.edges.curve.js"></script>
+<script src="../src/renderers/canvas/sigma.canvas.edges.arrow.js"></script>
+<script src="../src/renderers/canvas/sigma.canvas.edges.curvedArrow.js"></script>
+<script src="../src/renderers/canvas/sigma.canvas.edgehovers.def.js"></script>
+<script src="../src/renderers/canvas/sigma.canvas.edgehovers.curve.js"></script>
+<script src="../src/renderers/canvas/sigma.canvas.edgehovers.arrow.js"></script>
+<script src="../src/renderers/canvas/sigma.canvas.edgehovers.curvedArrow.js"></script>
+<script src="../src/renderers/canvas/sigma.canvas.extremities.def.js"></script>
+<script src="../src/renderers/svg/sigma.svg.utils.js"></script>
+<script src="../src/renderers/svg/sigma.svg.nodes.def.js"></script>
+<script src="../src/renderers/svg/sigma.svg.edges.def.js"></script>
+<script src="../src/renderers/svg/sigma.svg.edges.curve.js"></script>
+<script src="../src/renderers/svg/sigma.svg.labels.def.js"></script>
+<script src="../src/renderers/svg/sigma.svg.hovers.def.js"></script>
+<script src="../src/middlewares/sigma.middlewares.rescale.js"></script>
+<script src="../src/middlewares/sigma.middlewares.copy.js"></script>
+<script src="../src/misc/sigma.misc.animation.js"></script>
+<script src="../src/misc/sigma.misc.bindEvents.js"></script>
+<script src="../src/misc/sigma.misc.bindDOMEvents.js"></script>
+<script src="../src/misc/sigma.misc.drawHovers.js"></script>
+<!-- END SIGMA IMPORTS -->
+<script src="../plugins/sigma.parsers.gexf/gexf-parser.js"></script>
+<script src="../plugins/sigma.parsers.gexf/sigma.parsers.gexf.js"></script>
+
+<div id="container">
+  <style>
+    #graph-container {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: absolute;
+    }
+  </style>
+  <div id="graph-container"></div>
+</div>
+<script type="text/javascript">
+/**
+ * Here is just a basic example on how to properly display a graph
+ * exported from Gephi in the GEXF format.
+ *
+ * The plugin sigma.parsers.gexf can load and parse the GEXF graph file,
+ * and instantiate sigma when the graph is received.
+ *
+ * The object given as the second parameter is the base of the instance
+ * configuration object. The plugin will just add the "graph" key to it
+ * before the instanciation.
+ */
+sigma.parsers.gexf('NorthSydney.gexf', {
+  container: 'graph-container'
+});
+</script>
 </body>
 </html>
