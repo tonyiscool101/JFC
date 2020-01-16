@@ -1,0 +1,1180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.3" version="1.3" xmlns:viz="http://www.gexf.net/1.3/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.3 http://www.gexf.net/1.3/gexf.xsd">
+  <meta lastmodifieddate="2020-01-16">
+    <creator>Gephi 0.9</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="branch" title="branch" type="string"></attribute>
+      <attribute id="jobtitle" title="jobtitle" type="string"></attribute>
+      <attribute id="degree" title="Degree" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="eccentricity" title="Eccentricity" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="closnesscentrality" title="Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="harmonicclosnesscentrality" title="Harmonic Closeness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="betweenesscentrality" title="Betweenness Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="clustering" title="Clustering Coefficient" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="triangles" title="Number of triangles" type="integer">
+        <default>0</default>
+      </attribute>
+      <attribute id="eigencentrality" title="Eigenvector Centrality" type="double">
+        <default>0.0</default>
+      </attribute>
+      <attribute id="modularity_class" title="Modularity Class" type="integer">
+        <default>0</default>
+      </attribute>
+    </attributes>
+    <nodes>
+      <node id="85caa3b5ee831722a3e71a6e5518ba14" label="PROJECT ENGINEER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROJECT ENGINEER"></attvalue>
+          <attvalue for="degree" value="7"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.42990654205607476"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5018115942028986"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.009859125162155466"></attvalue>
+          <attvalue for="clustering" value="0.47619047619047616"></attvalue>
+          <attvalue for="triangles" value="10"></attvalue>
+          <attvalue for="eigencentrality" value="0.5472867058717742"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="31.891468"></viz:size>
+        <viz:position x="285.34204" y="-568.34375"></viz:position>
+        <viz:color r="96" g="199" b="148"></viz:color>
+      </node>
+      <node id="c3f4c776997332bcd11723388a6c848d" label="OPERATIONS MANAGER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="OPERATIONS MANAGER"></attvalue>
+          <attvalue for="degree" value="8"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.45098039215686275"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5253623188405795"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.012059128602008378"></attvalue>
+          <attvalue for="clustering" value="0.4642857142857143"></attvalue>
+          <attvalue for="triangles" value="13"></attvalue>
+          <attvalue for="eigencentrality" value="0.5952856648293926"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="33.811424"></viz:size>
+        <viz:position x="90.457344" y="-263.3006"></viz:position>
+        <viz:color r="90" g="204" b="132"></viz:color>
+      </node>
+      <node id="b3358baf2f51b1f2affbce198665355a" label="PROJECT ENGINEERING LEADER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROJECT ENGINEERING LEADER"></attvalue>
+          <attvalue for="degree" value="7"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.4144144144144144"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.49710144927536226"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.05601662397958694"></attvalue>
+          <attvalue for="clustering" value="0.3333333333333333"></attvalue>
+          <attvalue for="triangles" value="7"></attvalue>
+          <attvalue for="eigencentrality" value="0.2262660075982758"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="19.05064"></viz:size>
+        <viz:position x="-642.8816" y="192.26178"></viz:position>
+        <viz:color r="175" g="223" b="211"></viz:color>
+      </node>
+      <node id="8df92343f6970159a02394b345f1dc6c" label="HEALTH AND SAFETY MANAGER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="HEALTH AND SAFETY MANAGER"></attvalue>
+          <attvalue for="degree" value="9"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.42990654205607476"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5224637681159419"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.03512182033176289"></attvalue>
+          <attvalue for="clustering" value="0.3055555555555556"></attvalue>
+          <attvalue for="triangles" value="11"></attvalue>
+          <attvalue for="eigencentrality" value="0.5615418285139071"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="32.461674"></viz:size>
+        <viz:position x="-5.9585238" y="-518.6363"></viz:position>
+        <viz:color r="94" g="200" b="143"></viz:color>
+      </node>
+      <node id="71b0740e104af99e9a6472c079341d6e" label="SENIOR SUPERINTENDENT">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="SENIOR SUPERINTENDENT"></attvalue>
+          <attvalue for="degree" value="12"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.4791666666666667"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5778985507246377"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.058281482020836356"></attvalue>
+          <attvalue for="clustering" value="0.36363636363636365"></attvalue>
+          <attvalue for="triangles" value="24"></attvalue>
+          <attvalue for="eigencentrality" value="0.8790411451050463"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="45.161644"></viz:size>
+        <viz:position x="426.75662" y="-311.40958"></viz:position>
+        <viz:color r="55" g="236" b="39"></viz:color>
+      </node>
+      <node id="e39748bfcced812b2ad2c5091a7d78ab" label="PROPOSALS MANAGER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROPOSALS MANAGER"></attvalue>
+          <attvalue for="degree" value="5"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.34328358208955223"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.4119565217391305"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.006475869809203143"></attvalue>
+          <attvalue for="clustering" value="0.4"></attvalue>
+          <attvalue for="triangles" value="4"></attvalue>
+          <attvalue for="eigencentrality" value="0.1191512176976446"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="14.766048"></viz:size>
+        <viz:position x="-508.9983" y="487.5882"></viz:position>
+        <viz:color r="204" g="235" b="230" a="0.99607843"></viz:color>
+      </node>
+      <node id="01ff0267d33151d52aecaa65bb389aa9" label="HC BUSINESS PARTNER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="HC BUSINESS PARTNER"></attvalue>
+          <attvalue for="degree" value="13"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.46938775510204084"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5797101449275361"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.05163714435253355"></attvalue>
+          <attvalue for="clustering" value="0.38461538461538464"></attvalue>
+          <attvalue for="triangles" value="30"></attvalue>
+          <attvalue for="eigencentrality" value="0.9436780842698592"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="47.747124"></viz:size>
+        <viz:position x="771.90704" y="-21.342804"></viz:position>
+        <viz:color r="47" g="243" b="18"></viz:color>
+      </node>
+      <node id="1ebb1461b44631f1425af36d851e5013" label="PROJECT LEADER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROJECT LEADER"></attvalue>
+          <attvalue for="degree" value="8"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.39655172413793105"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.4880434782608695"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.07295950277431759"></attvalue>
+          <attvalue for="clustering" value="0.21428571428571427"></attvalue>
+          <attvalue for="triangles" value="6"></attvalue>
+          <attvalue for="eigencentrality" value="0.2244967067961608"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="18.979868"></viz:size>
+        <viz:position x="-735.85297" y="60.720345"></viz:position>
+        <viz:color r="176" g="223" b="211"></viz:color>
+      </node>
+      <node id="c0524fc45113144bcb56435870113fd5" label="HC BUSINESS PARTNER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="HC BUSINESS PARTNER"></attvalue>
+          <attvalue for="degree" value="7"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.45098039215686275"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5163043478260868"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.03474949604579234"></attvalue>
+          <attvalue for="clustering" value="0.38095238095238093"></attvalue>
+          <attvalue for="triangles" value="8"></attvalue>
+          <attvalue for="eigencentrality" value="0.43741960151084736"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="27.496784"></viz:size>
+        <viz:position x="-323.645" y="243.68571"></viz:position>
+        <viz:color r="118" g="200" b="174"></viz:color>
+      </node>
+      <node id="1e612ecd7c0741332df817a5be24f8a8" label="SENIOR COMMERCIAL MANAGER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="SENIOR COMMERCIAL MANAGER"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="eccentricity" value="6.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.31724137931034485"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.36413043478260876"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="1.0"></attvalue>
+          <attvalue for="triangles" value="1"></attvalue>
+          <attvalue for="eigencentrality" value="0.06195251964194405"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="12.478101"></viz:size>
+        <viz:position x="-794.1629" y="142.72733"></viz:position>
+        <viz:color r="220" g="241" b="240" a="0.99607843"></viz:color>
+      </node>
+      <node id="543f869d5b4d99aaf26d56adb61928a9" label="PROPOSALS CO-ORDINATOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROPOSALS CO-ORDINATOR"></attvalue>
+          <attvalue for="degree" value="13"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.5"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.596014492753623"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.11647734849160876"></attvalue>
+          <attvalue for="clustering" value="0.2948717948717949"></attvalue>
+          <attvalue for="triangles" value="23"></attvalue>
+          <attvalue for="eigencentrality" value="0.8252705988415878"></attvalue>
+          <attvalue for="modularity_class" value="10"></attvalue>
+        </attvalues>
+        <viz:size value="43.010822"></viz:size>
+        <viz:position x="-179.92964" y="-117.574066"></viz:position>
+        <viz:color r="62" g="230" b="57"></viz:color>
+      </node>
+      <node id="33cd22e96ed1592e6ba94782b3fe2827" label="WORK WINNING LEADER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="WORK WINNING LEADER"></attvalue>
+          <attvalue for="degree" value="8"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.37398373983739835"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.4688405797101449"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.049920463624167306"></attvalue>
+          <attvalue for="clustering" value="0.32142857142857145"></attvalue>
+          <attvalue for="triangles" value="9"></attvalue>
+          <attvalue for="eigencentrality" value="0.16735222210772524"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="16.694088"></viz:size>
+        <viz:position x="-790.3696" y="390.3306"></viz:position>
+        <viz:color r="191" g="229" b="221"></viz:color>
+      </node>
+      <node id="091a64081c4b6f8c5eddc9f79aa0b519" label="HEALTH SAFETY AND ENVIRONMENT LEADER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="HEALTH SAFETY AND ENVIRONMENT LEADER"></attvalue>
+          <attvalue for="degree" value="7"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.42990654205607476"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.49999999999999983"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.036598859427142263"></attvalue>
+          <attvalue for="clustering" value="0.2857142857142857"></attvalue>
+          <attvalue for="triangles" value="6"></attvalue>
+          <attvalue for="eigencentrality" value="0.3443579664350127"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="23.774319"></viz:size>
+        <viz:position x="-19.158796" y="-695.75946"></viz:position>
+        <viz:color r="144" g="210" b="191"></viz:color>
+      </node>
+      <node id="0b65b1022cba4d04ddd1067345b553db" label="SENIOR COMMERCIAL MANAGER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="SENIOR COMMERCIAL MANAGER"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.4"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.4420289855072463"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.010186788520121849"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="triangles" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.18211753113867063"></attvalue>
+          <attvalue for="modularity_class" value="10"></attvalue>
+        </attvalues>
+        <viz:size value="17.284702"></viz:size>
+        <viz:position x="123.693" y="390.04572"></viz:position>
+        <viz:color r="187" g="228" b="219"></viz:color>
+      </node>
+      <node id="d39d40d457f9449c40bfced52c5b1947" label="SENIOR ESTIMATOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="SENIOR ESTIMATOR"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3484848484848485"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.3902173913043478"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.007806637806637804"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="triangles" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.10517412363013406"></attvalue>
+          <attvalue for="modularity_class" value="10"></attvalue>
+        </attvalues>
+        <viz:size value="14.2069645"></viz:size>
+        <viz:position x="-556.6476" y="-166.0869"></viz:position>
+        <viz:color r="208" g="236" b="232"></viz:color>
+      </node>
+      <node id="a4566b655c6965e27ee688a2fd2ae713" label="ESTIMATING MANAGER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="ESTIMATING MANAGER"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="eccentricity" value="6.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3087248322147651"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.3666666666666667"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.00499438832772166"></attvalue>
+          <attvalue for="clustering" value="0.3333333333333333"></attvalue>
+          <attvalue for="triangles" value="1"></attvalue>
+          <attvalue for="eigencentrality" value="0.06969746336285229"></attvalue>
+          <attvalue for="modularity_class" value="10"></attvalue>
+        </attvalues>
+        <viz:size value="12.787899"></viz:size>
+        <viz:position x="-909.1607" y="-110.94422"></viz:position>
+        <viz:color r="218" g="240" b="238" a="0.99607843"></viz:color>
+      </node>
+      <node id="7108706a24cad007a0b8ce69d2396506" label="SITE ADMINISTRATOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="SITE ADMINISTRATOR"></attvalue>
+          <attvalue for="degree" value="12"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.45098039215686275"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5597826086956521"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.08583566254392158"></attvalue>
+          <attvalue for="clustering" value="0.25757575757575757"></attvalue>
+          <attvalue for="triangles" value="17"></attvalue>
+          <attvalue for="eigencentrality" value="0.7440321920447002"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="39.761288"></viz:size>
+        <viz:position x="748.54236" y="-484.86325"></viz:position>
+        <viz:color r="72" g="221" b="83"></viz:color>
+      </node>
+      <node id="342c03be7544130bbc326fe118d4a470" label="RECRUITMENT SPECIALIST">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="RECRUITMENT SPECIALIST"></attvalue>
+          <attvalue for="degree" value="13"></attvalue>
+          <attvalue for="eccentricity" value="3.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.5227272727272727"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.608695652173913"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.13017906636543994"></attvalue>
+          <attvalue for="clustering" value="0.2948717948717949"></attvalue>
+          <attvalue for="triangles" value="23"></attvalue>
+          <attvalue for="eigencentrality" value="0.870009780899878"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="44.800392"></viz:size>
+        <viz:position x="465.8768" y="145.95158"></viz:position>
+        <viz:color r="56" g="235" b="42"></viz:color>
+      </node>
+      <node id="f9cc1c3682be61ca8cc02993fe326046" label="HEALTH AND SAFETY MANAGER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="HEALTH AND SAFETY MANAGER"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.368"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.4210144927536231"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.002757201646090535"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="triangles" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.18914915618938966"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="17.565966"></viz:size>
+        <viz:position x="194.16568" y="-842.44354"></viz:position>
+        <viz:color r="185" g="227" b="218"></viz:color>
+      </node>
+      <node id="cf91e4f5d8d0d7defca3b471d32221d2" label="PROJECT ENGINEER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROJECT ENGINEER"></attvalue>
+          <attvalue for="degree" value="8"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.4380952380952381"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5181159420289856"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.005731573576691422"></attvalue>
+          <attvalue for="clustering" value="0.7142857142857143"></attvalue>
+          <attvalue for="triangles" value="20"></attvalue>
+          <attvalue for="eigencentrality" value="0.7169791393297598"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="38.679165"></viz:size>
+        <viz:position x="397.975" y="-435.51157"></viz:position>
+        <viz:color r="75" g="218" b="92"></viz:color>
+      </node>
+      <node id="8bb8f66f5f803aabe2ce5301a4ffc3fa" label="HC ADVISOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="HC ADVISOR"></attvalue>
+          <attvalue for="degree" value="9"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.42990654205607476"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5199275362318839"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.031181355120749057"></attvalue>
+          <attvalue for="clustering" value="0.3055555555555556"></attvalue>
+          <attvalue for="triangles" value="11"></attvalue>
+          <attvalue for="eigencentrality" value="0.5410570804293018"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="31.642284"></viz:size>
+        <viz:position x="835.06647" y="-209.50374"></viz:position>
+        <viz:color r="96" g="198" b="150"></viz:color>
+      </node>
+      <node id="5dafd1740af50a1bd50439fb693182e1" label="ADMINISTRATOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="ADMINISTRATOR"></attvalue>
+          <attvalue for="degree" value="5"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.38333333333333336"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.45181159420289846"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.012138232138232135"></attvalue>
+          <attvalue for="clustering" value="0.5"></attvalue>
+          <attvalue for="triangles" value="5"></attvalue>
+          <attvalue for="eigencentrality" value="0.2784766945297917"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="21.139069"></viz:size>
+        <viz:position x="336.635" y="-745.3408"></viz:position>
+        <viz:color r="161" g="217" b="202"></viz:color>
+      </node>
+      <node id="8219b6fe7ae0313524ec16e9af5d1fc6" label="PROJECT LEADER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROJECT LEADER"></attvalue>
+          <attvalue for="degree" value="8"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.4339622641509434"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5126811594202898"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.008589123698056159"></attvalue>
+          <attvalue for="clustering" value="0.5"></attvalue>
+          <attvalue for="triangles" value="14"></attvalue>
+          <attvalue for="eigencentrality" value="0.646389619235438"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="35.855583"></viz:size>
+        <viz:position x="235.57307" y="31.545715"></viz:position>
+        <viz:color r="84" g="210" b="115"></viz:color>
+      </node>
+      <node id="2dd198a3a0c442b21da67cc2fdfa6217" label="HC ADVISOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="HC ADVISOR"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3357664233576642"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.3844202898550725"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="1.0"></attvalue>
+          <attvalue for="triangles" value="1"></attvalue>
+          <attvalue for="eigencentrality" value="0.16938673751464325"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="16.77547"></viz:size>
+        <viz:position x="764.8202" y="49.367416"></viz:position>
+        <viz:color r="191" g="229" b="221"></viz:color>
+      </node>
+      <node id="ae53cc6e42c274d5fafb337f8b203348" label="ADMINISTRATOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="ADMINISTRATOR"></attvalue>
+          <attvalue for="degree" value="0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.3"></attvalue>
+          <attvalue for="triangles" value="3"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="4"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="613.5149" y="841.23553"></viz:position>
+        <viz:color r="237" g="248" b="251"></viz:color>
+      </node>
+      <node id="dc3b7667d777f67fba9f8fe7f5382a37" label="HC ADVISOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="HC ADVISOR"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="eccentricity" value="6.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.27710843373493976"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.3057971014492753"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.3333333333333333"></attvalue>
+          <attvalue for="triangles" value="1"></attvalue>
+          <attvalue for="eigencentrality" value="0.03336192493239159"></attvalue>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="11.334477"></viz:size>
+        <viz:position x="1048.6997" y="147.21873"></viz:position>
+        <viz:color r="227" g="244" b="245"></viz:color>
+      </node>
+      <node id="fcf1d43fecbf07e560a3b72b092a978d" label="SITE ENGINEER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="SITE ENGINEER"></attvalue>
+          <attvalue for="degree" value="5"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.34328358208955223"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.4126811594202898"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.006975308641975309"></attvalue>
+          <attvalue for="clustering" value="0.5"></attvalue>
+          <attvalue for="triangles" value="5"></attvalue>
+          <attvalue for="eigencentrality" value="0.12532196757662953"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="15.012878"></viz:size>
+        <viz:position x="-702.0146" y="535.868"></viz:position>
+        <viz:color r="203" g="234" b="229" a="0.99607843"></viz:color>
+      </node>
+      <node id="8b845a23b7ba61a967a3eefe3ac69435" label="SUPERVISOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="SUPERVISOR"></attvalue>
+          <attvalue for="degree" value="0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="triangles" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="5"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-639.59644" y="-551.42316"></viz:position>
+        <viz:color r="237" g="248" b="251"></viz:color>
+      </node>
+      <node id="b3f813874bd25d35c3a76f6bb1dbd0f2" label="GRADUATE">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="GRADUATE"></attvalue>
+          <attvalue for="degree" value="8"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.44660194174757284"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5235507246376813"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.010128276651350526"></attvalue>
+          <attvalue for="clustering" value="0.5357142857142857"></attvalue>
+          <attvalue for="triangles" value="15"></attvalue>
+          <attvalue for="eigencentrality" value="0.6764214925515776"></attvalue>
+          <attvalue for="modularity_class" value="10"></attvalue>
+        </attvalues>
+        <viz:size value="37.056858"></viz:size>
+        <viz:position x="75.83695" y="79.705574"></viz:position>
+        <viz:color r="80" g="213" b="106"></viz:color>
+      </node>
+      <node id="cf2d5196861e7dcb14ce4abdde8261dd" label="DESIGN LEADER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="DESIGN LEADER"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.2893081761006289"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.3170289855072464"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.4"></attvalue>
+          <attvalue for="triangles" value="4"></attvalue>
+          <attvalue for="eigencentrality" value="0.03581405113876807"></attvalue>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="11.432562"></viz:size>
+        <viz:position x="356.62555" y="793.2777"></viz:position>
+        <viz:color r="227" g="244" b="244"></viz:color>
+      </node>
+      <node id="4d63e9fc8d956785d39329a0e503c27d" label="PROJECT ENGINEER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROJECT ENGINEER"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.2929936305732484"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.33152173913043476"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.030303030303030304"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="triangles" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.03818648471316549"></attvalue>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="11.527459"></viz:size>
+        <viz:position x="423.9556" y="988.17474"></viz:position>
+        <viz:color r="226" g="243" b="244"></viz:color>
+      </node>
+      <node id="1888d274dad213e6e77fea9a9b56e148" label="PROJECT MANAGER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROJECT MANAGER"></attvalue>
+          <attvalue for="degree" value="2"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.368"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.4057971014492754"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.005808759142092475"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="triangles" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.11859305366528947"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="14.743722"></viz:size>
+        <viz:position x="-532.54266" y="662.2563"></viz:position>
+        <viz:color r="204" g="235" b="230"></viz:color>
+      </node>
+      <node id="1344ce38c3b3c187ab4271eb48a46e10" label="ACCOUNTANT">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="ACCOUNTANT"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="eccentricity" value="6.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.2822085889570552"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.31014492753623185"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.03571428571428571"></attvalue>
+          <attvalue for="triangles" value="1"></attvalue>
+          <attvalue for="eigencentrality" value="0.0232711886075979"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="10.930847"></viz:size>
+        <viz:position x="-187.46773" y="-891.4016"></viz:position>
+        <viz:color r="230" g="245" b="246" a="0.99607843"></viz:color>
+      </node>
+      <node id="ad8fed3f47a0e4ec199ea593994d9441" label="COMMERCIAL MANAGER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="COMMERCIAL MANAGER"></attvalue>
+          <attvalue for="degree" value="14"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.5054945054945055"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.6105072463768115"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.08945037177855555"></attvalue>
+          <attvalue for="clustering" value="0.38461538461538464"></attvalue>
+          <attvalue for="triangles" value="35"></attvalue>
+          <attvalue for="eigencentrality" value="1.0"></attvalue>
+          <attvalue for="modularity_class" value="10"></attvalue>
+        </attvalues>
+        <viz:size value="50.0"></viz:size>
+        <viz:position x="259.29953" y="195.37616"></viz:position>
+        <viz:color r="41" g="250" b="0"></viz:color>
+      </node>
+      <node id="20854024f6edd47eae408ad93c5edfbc" label="PLANNER - SENIOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PLANNER - SENIOR"></attvalue>
+          <attvalue for="degree" value="0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="1.0"></attvalue>
+          <attvalue for="triangles" value="1"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="6"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-53.8455" y="939.1568"></viz:position>
+        <viz:color r="237" g="248" b="251"></viz:color>
+      </node>
+      <node id="a18c21376730359487bb7e27416fdffd" label="HC ADVISOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="HC ADVISOR"></attvalue>
+          <attvalue for="degree" value="4"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.38016528925619836"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.4409420289855071"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.030607192371898254"></attvalue>
+          <attvalue for="clustering" value="0.3333333333333333"></attvalue>
+          <attvalue for="triangles" value="2"></attvalue>
+          <attvalue for="eigencentrality" value="0.28720903405635545"></attvalue>
+          <attvalue for="modularity_class" value="7"></attvalue>
+        </attvalues>
+        <viz:size value="21.488361"></viz:size>
+        <viz:position x="993.6117" y="97.984665"></viz:position>
+        <viz:color r="159" g="216" b="201"></viz:color>
+      </node>
+      <node id="6746bea26b62ff2cf7e8d6329b42ec22" label="PROPOSALS CO-ORDINATOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROPOSALS CO-ORDINATOR"></attvalue>
+          <attvalue for="degree" value="7"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.42990654205607476"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.49999999999999983"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.04594903039347484"></attvalue>
+          <attvalue for="clustering" value="0.42857142857142855"></attvalue>
+          <attvalue for="triangles" value="9"></attvalue>
+          <attvalue for="eigencentrality" value="0.2753038935856407"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="21.012156"></viz:size>
+        <viz:position x="-556.71094" y="341.0207"></viz:position>
+        <viz:color r="162" g="218" b="203"></viz:color>
+      </node>
+      <node id="2007d3d8958b324beb393bd1e473ab78" label="REGIONAL QUALITY MANAGER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="REGIONAL QUALITY MANAGER"></attvalue>
+          <attvalue for="degree" value="5"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.40350877192982454"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.4655797101449275"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.08821548821548822"></attvalue>
+          <attvalue for="clustering" value="0.3"></attvalue>
+          <attvalue for="triangles" value="3"></attvalue>
+          <attvalue for="eigencentrality" value="0.3055329397908552"></attvalue>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="22.221317"></viz:size>
+        <viz:position x="313.63544" y="741.95"></viz:position>
+        <viz:color r="154" g="215" b="197"></viz:color>
+      </node>
+      <node id="3f45b304929caa73a6b04325128c772d" label="HEAD OF TALENT LEARNING AND DEVELOPMENT">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="HEAD OF TALENT LEARNING AND DEVELOPMENT"></attvalue>
+          <attvalue for="degree" value="0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="triangles" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="9"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="682.7508" y="692.2131"></viz:position>
+        <viz:color r="237" g="248" b="251"></viz:color>
+      </node>
+      <node id="03c3c045a79dce3712f19101672e0624" label="SENIOR ENVIRONMENTAL ADVISOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="SENIOR ENVIRONMENTAL ADVISOR"></attvalue>
+          <attvalue for="degree" value="5"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3898305084745763"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.45181159420289835"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.03684149184149184"></attvalue>
+          <attvalue for="clustering" value="0.4"></attvalue>
+          <attvalue for="triangles" value="4"></attvalue>
+          <attvalue for="eigencentrality" value="0.1764683082035585"></attvalue>
+          <attvalue for="modularity_class" value="0"></attvalue>
+        </attvalues>
+        <viz:size value="17.058733"></viz:size>
+        <viz:position x="-221.87263" y="-793.4363"></viz:position>
+        <viz:color r="189" g="228" b="220"></viz:color>
+      </node>
+      <node id="9193560269ef3154017d0be2335b87ed" label="PLANNING AND PROJECT CONTROLS MANAGER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PLANNING AND PROJECT CONTROLS MANAGER"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3262411347517731"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.3608695652173914"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.4090909090909091"></attvalue>
+          <attvalue for="triangles" value="27"></attvalue>
+          <attvalue for="eigencentrality" value="0.09920653189389922"></attvalue>
+          <attvalue for="modularity_class" value="3"></attvalue>
+        </attvalues>
+        <viz:size value="13.968262"></viz:size>
+        <viz:position x="661.7164" y="-359.94772"></viz:position>
+        <viz:color r="210" g="237" b="233"></viz:color>
+      </node>
+      <node id="30a6a32527479fcac51adc892797cf15" label="PROPOSALS CO-ORDINATOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROPOSALS CO-ORDINATOR"></attvalue>
+          <attvalue for="degree" value="5"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.4"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.46014492753623193"></attvalue>
+          <attvalue for="betweenesscentrality" value="6.172839506172839E-4"></attvalue>
+          <attvalue for="clustering" value="0.7"></attvalue>
+          <attvalue for="triangles" value="7"></attvalue>
+          <attvalue for="eigencentrality" value="0.4550742129753166"></attvalue>
+          <attvalue for="modularity_class" value="10"></attvalue>
+        </attvalues>
+        <viz:size value="28.202969"></viz:size>
+        <viz:position x="55.758923" y="-69.3135"></viz:position>
+        <viz:color r="114" g="198" b="171"></viz:color>
+      </node>
+      <node id="d896a84163b9e2e4313687b9366ad59c" label="PROCUREMENT ASSISTANT">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROCUREMENT ASSISTANT"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3357664233576642"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.36847826086956526"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.19047619047619047"></attvalue>
+          <attvalue for="triangles" value="4"></attvalue>
+          <attvalue for="eigencentrality" value="0.09407108878564262"></attvalue>
+          <attvalue for="modularity_class" value="10"></attvalue>
+        </attvalues>
+        <viz:size value="13.762844"></viz:size>
+        <viz:position x="-298.91513" y="-214.94838"></viz:position>
+        <viz:color r="211" g="237" b="234"></viz:color>
+      </node>
+      <node id="2bbf38a6de654291678eb742aef23d95" label="QUANTITY SURVEYOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="QUANTITY SURVEYOR"></attvalue>
+          <attvalue for="degree" value="9"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.46464646464646464"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.5434782608695652"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.045656548838367"></attvalue>
+          <attvalue for="clustering" value="0.5"></attvalue>
+          <attvalue for="triangles" value="18"></attvalue>
+          <attvalue for="eigencentrality" value="0.7210272726325376"></attvalue>
+          <attvalue for="modularity_class" value="10"></attvalue>
+        </attvalues>
+        <viz:size value="38.84109"></viz:size>
+        <viz:position x="155.52156" y="293.3908"></viz:position>
+        <viz:color r="75" g="218" b="91"></viz:color>
+      </node>
+      <node id="4b68983b72b45f84b5b65f8869f1fb1d" label="DATA AND INTEGRATION TEAM LEADER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="DATA AND INTEGRATION TEAM LEADER"></attvalue>
+          <attvalue for="degree" value="0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.21978021978021978"></attvalue>
+          <attvalue for="triangles" value="20"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="11"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-221.24944" y="890.8695"></viz:position>
+        <viz:color r="237" g="248" b="251"></viz:color>
+      </node>
+      <node id="23a87916df85b72ced1ee924201afbaf" label="COMMUNITY RELATIONS ADVISOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="COMMUNITY RELATIONS ADVISOR"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="eccentricity" value="4.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3709677419354839"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.41847826086956524"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.012678994530846378"></attvalue>
+          <attvalue for="clustering" value="0.3333333333333333"></attvalue>
+          <attvalue for="triangles" value="1"></attvalue>
+          <attvalue for="eigencentrality" value="0.1244578716570687"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="14.978315"></viz:size>
+        <viz:position x="-318.6222" y="438.7905"></viz:position>
+        <viz:color r="203" g="234" b="229"></viz:color>
+      </node>
+      <node id="1c56503be345b92ab2d78d7fa02e86f7" label="PROJECT ENGINEER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROJECT ENGINEER"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3129251700680272"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.35144927536231896"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="triangles" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.08511284621944445"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="13.404514"></viz:size>
+        <viz:position x="845.1865" y="-793.53345"></viz:position>
+        <viz:color r="214" g="238" b="236"></viz:color>
+      </node>
+      <node id="f04e28fa775574f2ad55fb24fb76e498" label="SENIOR HEALTH SAFETY AND ENVIRONMENT ADVISOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="SENIOR HEALTH SAFETY AND ENVIRONMENT ADVISOR"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.3129251700680272"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.35144927536231896"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.16666666666666666"></attvalue>
+          <attvalue for="triangles" value="1"></attvalue>
+          <attvalue for="eigencentrality" value="0.08511284621944445"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="13.404514"></viz:size>
+        <viz:position x="837.212" y="-647.3965"></viz:position>
+        <viz:color r="214" g="238" b="236"></viz:color>
+      </node>
+      <node id="c6b0f1e56dd0d80e03a1b08e4b0e1f07" label="EXECUTIVE ASSISTANT">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="EXECUTIVE ASSISTANT"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="eccentricity" value="6.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.27380952380952384"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.3119565217391303"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.3333333333333333"></attvalue>
+          <attvalue for="triangles" value="5"></attvalue>
+          <attvalue for="eigencentrality" value="0.02535301651002011"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="11.014121"></viz:size>
+        <viz:position x="-1028.7201" y="584.4617"></viz:position>
+        <viz:color r="230" g="245" b="246"></viz:color>
+      </node>
+      <node id="512a11a4828ff0a58e34aa7bc9e855b3" label="SENIOR HC ADVISOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="SENIOR HC ADVISOR"></attvalue>
+          <attvalue for="degree" value="3"></attvalue>
+          <attvalue for="eccentricity" value="5.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.35658914728682173"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.4170289855072463"></attvalue>
+          <attvalue for="betweenesscentrality" value="3.0897207367795607E-4"></attvalue>
+          <attvalue for="clustering" value="0.6666666666666666"></attvalue>
+          <attvalue for="triangles" value="2"></attvalue>
+          <attvalue for="eigencentrality" value="0.24713622042533323"></attvalue>
+          <attvalue for="modularity_class" value="2"></attvalue>
+        </attvalues>
+        <viz:size value="19.885448"></viz:size>
+        <viz:position x="1093.9886" y="-435.82346"></viz:position>
+        <viz:color r="170" g="221" b="207"></viz:color>
+      </node>
+      <node id="8aebd12f0cb72c1dc4297bd505457814" label="PLANNING AND PROJECT CONTROLS MANAGER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PLANNING AND PROJECT CONTROLS MANAGER"></attvalue>
+          <attvalue for="degree" value="0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="triangles" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="12"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-678.93616" y="-647.6682"></viz:position>
+        <viz:color r="237" g="248" b="251"></viz:color>
+      </node>
+      <node id="0e79c248c76f90a73eb9923550c3890a" label="GENERAL MANAGER - OPERATIONS">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="GENERAL MANAGER - OPERATIONS"></attvalue>
+          <attvalue for="degree" value="0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="triangles" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="13"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-867.0631" y="-417.25824"></viz:position>
+        <viz:color r="237" g="248" b="251"></viz:color>
+      </node>
+      <node id="2137553a600dd8e7255b937b20acc9da" label="SUPERINTENDENT">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="SUPERINTENDENT"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="eccentricity" value="6.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.22772277227722773"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.25144927536231876"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="triangles" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.006224165301818988"></attvalue>
+          <attvalue for="modularity_class" value="8"></attvalue>
+        </attvalues>
+        <viz:size value="10.248966"></viz:size>
+        <viz:position x="415.2355" y="1060.8481"></viz:position>
+        <viz:color r="235" g="247" b="249"></viz:color>
+      </node>
+      <node id="02ec7b6c66e953fef9aee851b59576c3" label="SENIOR QUANTITY SURVEYOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="SENIOR QUANTITY SURVEYOR"></attvalue>
+          <attvalue for="degree" value="0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="1.0"></attvalue>
+          <attvalue for="triangles" value="1"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="14"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-762.1641" y="-467.20828"></viz:position>
+        <viz:color r="237" g="248" b="251"></viz:color>
+      </node>
+      <node id="66a255674ee03542af02bae37a900477" label="PROJECT ENGINEER">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="PROJECT ENGINEER"></attvalue>
+          <attvalue for="degree" value="1"></attvalue>
+          <attvalue for="eccentricity" value="6.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.2857142857142857"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.3221014492753622"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="triangles" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.031093565228341984"></attvalue>
+          <attvalue for="modularity_class" value="1"></attvalue>
+        </attvalues>
+        <viz:size value="11.243743"></viz:size>
+        <viz:position x="-1025.5256" y="-25.618626"></viz:position>
+        <viz:color r="228" g="244" b="245" a="0.99607843"></viz:color>
+      </node>
+      <node id="0e0e95525b26e76ad007a7f8ba5a6351" label="SUPERVISOR">
+        <attvalues>
+          <attvalue for="branch" value="Perth - Burswood"></attvalue>
+          <attvalue for="jobtitle" value="SUPERVISOR"></attvalue>
+          <attvalue for="degree" value="0"></attvalue>
+          <attvalue for="eccentricity" value="0.0"></attvalue>
+          <attvalue for="closnesscentrality" value="0.0"></attvalue>
+          <attvalue for="harmonicclosnesscentrality" value="0.0"></attvalue>
+          <attvalue for="betweenesscentrality" value="0.0"></attvalue>
+          <attvalue for="clustering" value="0.0"></attvalue>
+          <attvalue for="triangles" value="0"></attvalue>
+          <attvalue for="eigencentrality" value="0.0"></attvalue>
+          <attvalue for="modularity_class" value="15"></attvalue>
+        </attvalues>
+        <viz:size value="10.0"></viz:size>
+        <viz:position x="-925.80206" y="-599.3863"></viz:position>
+        <viz:color r="237" g="248" b="251"></viz:color>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="567" source="b3358baf2f51b1f2affbce198665355a" target="1ebb1461b44631f1425af36d851e5013" weight="5.0"></edge>
+      <edge id="568" source="b3358baf2f51b1f2affbce198665355a" target="a4566b655c6965e27ee688a2fd2ae713"></edge>
+      <edge id="569" source="b3358baf2f51b1f2affbce198665355a" target="6746bea26b62ff2cf7e8d6329b42ec22" weight="4.0"></edge>
+      <edge id="570" source="b3358baf2f51b1f2affbce198665355a" target="33cd22e96ed1592e6ba94782b3fe2827" weight="5.0"></edge>
+      <edge id="728" source="c3f4c776997332bcd11723388a6c848d" target="8bb8f66f5f803aabe2ce5301a4ffc3fa"></edge>
+      <edge id="916" source="71b0740e104af99e9a6472c079341d6e" target="01ff0267d33151d52aecaa65bb389aa9" weight="3.0"></edge>
+      <edge id="918" source="71b0740e104af99e9a6472c079341d6e" target="9193560269ef3154017d0be2335b87ed" weight="2.0"></edge>
+      <edge id="920" source="71b0740e104af99e9a6472c079341d6e" target="8df92343f6970159a02394b345f1dc6c" weight="2.0"></edge>
+      <edge id="1132" source="01ff0267d33151d52aecaa65bb389aa9" target="8bb8f66f5f803aabe2ce5301a4ffc3fa" weight="8.0"></edge>
+      <edge id="1133" source="01ff0267d33151d52aecaa65bb389aa9" target="a18c21376730359487bb7e27416fdffd"></edge>
+      <edge id="1214" source="33cd22e96ed1592e6ba94782b3fe2827" target="c6b0f1e56dd0d80e03a1b08e4b0e1f07"></edge>
+      <edge id="1338" source="0b65b1022cba4d04ddd1067345b553db" target="ad8fed3f47a0e4ec199ea593994d9441" weight="4.0"></edge>
+      <edge id="1857" source="7108706a24cad007a0b8ce69d2396506" target="512a11a4828ff0a58e34aa7bc9e855b3"></edge>
+      <edge id="2238" source="342c03be7544130bbc326fe118d4a470" target="01ff0267d33151d52aecaa65bb389aa9" weight="16.0"></edge>
+      <edge id="2239" source="342c03be7544130bbc326fe118d4a470" target="8219b6fe7ae0313524ec16e9af5d1fc6" weight="10.0"></edge>
+      <edge id="2295" source="342c03be7544130bbc326fe118d4a470" target="8bb8f66f5f803aabe2ce5301a4ffc3fa"></edge>
+      <edge id="2491" source="342c03be7544130bbc326fe118d4a470" target="c0524fc45113144bcb56435870113fd5" weight="3.0"></edge>
+      <edge id="3764" source="7108706a24cad007a0b8ce69d2396506" target="cf91e4f5d8d0d7defca3b471d32221d2" weight="3.0"></edge>
+      <edge id="3891" source="7108706a24cad007a0b8ce69d2396506" target="01ff0267d33151d52aecaa65bb389aa9" weight="5.0"></edge>
+      <edge id="5187" source="7108706a24cad007a0b8ce69d2396506" target="342c03be7544130bbc326fe118d4a470" weight="2.0"></edge>
+      <edge id="5537" source="342c03be7544130bbc326fe118d4a470" target="71b0740e104af99e9a6472c079341d6e"></edge>
+      <edge id="5540" source="342c03be7544130bbc326fe118d4a470" target="ad8fed3f47a0e4ec199ea593994d9441" weight="4.0"></edge>
+      <edge id="5564" source="342c03be7544130bbc326fe118d4a470" target="2bbf38a6de654291678eb742aef23d95" weight="2.0"></edge>
+      <edge id="6504" source="b3358baf2f51b1f2affbce198665355a" target="fcf1d43fecbf07e560a3b72b092a978d" weight="4.0"></edge>
+      <edge id="6512" source="b3358baf2f51b1f2affbce198665355a" target="1e612ecd7c0741332df817a5be24f8a8" weight="4.0"></edge>
+      <edge id="6584" source="b3358baf2f51b1f2affbce198665355a" target="543f869d5b4d99aaf26d56adb61928a9" weight="5.0"></edge>
+      <edge id="6587" source="cf91e4f5d8d0d7defca3b471d32221d2" target="71b0740e104af99e9a6472c079341d6e" weight="5.0"></edge>
+      <edge id="6588" source="cf91e4f5d8d0d7defca3b471d32221d2" target="85caa3b5ee831722a3e71a6e5518ba14" weight="6.0"></edge>
+      <edge id="6685" source="8bb8f66f5f803aabe2ce5301a4ffc3fa" target="5dafd1740af50a1bd50439fb693182e1" weight="2.0"></edge>
+      <edge id="6689" source="8bb8f66f5f803aabe2ce5301a4ffc3fa" target="2dd198a3a0c442b21da67cc2fdfa6217"></edge>
+      <edge id="6751" source="5dafd1740af50a1bd50439fb693182e1" target="091a64081c4b6f8c5eddc9f79aa0b519" weight="2.0"></edge>
+      <edge id="7110" source="8219b6fe7ae0313524ec16e9af5d1fc6" target="c0524fc45113144bcb56435870113fd5" weight="2.0"></edge>
+      <edge id="7184" source="71b0740e104af99e9a6472c079341d6e" target="512a11a4828ff0a58e34aa7bc9e855b3"></edge>
+      <edge id="7772" source="2dd198a3a0c442b21da67cc2fdfa6217" target="01ff0267d33151d52aecaa65bb389aa9" weight="7.0"></edge>
+      <edge id="8953" source="c3f4c776997332bcd11723388a6c848d" target="c0524fc45113144bcb56435870113fd5"></edge>
+      <edge id="8962" source="dc3b7667d777f67fba9f8fe7f5382a37" target="a18c21376730359487bb7e27416fdffd" weight="9.0"></edge>
+      <edge id="9219" source="c3f4c776997332bcd11723388a6c848d" target="8219b6fe7ae0313524ec16e9af5d1fc6" weight="4.0"></edge>
+      <edge id="9379" source="5dafd1740af50a1bd50439fb693182e1" target="03c3c045a79dce3712f19101672e0624" weight="3.0"></edge>
+      <edge id="9516" source="5dafd1740af50a1bd50439fb693182e1" target="8df92343f6970159a02394b345f1dc6c" weight="2.0"></edge>
+      <edge id="9729" source="c3f4c776997332bcd11723388a6c848d" target="543f869d5b4d99aaf26d56adb61928a9" weight="5.0"></edge>
+      <edge id="9765" source="c3f4c776997332bcd11723388a6c848d" target="091a64081c4b6f8c5eddc9f79aa0b519" weight="3.0"></edge>
+      <edge id="10655" source="cf91e4f5d8d0d7defca3b471d32221d2" target="2bbf38a6de654291678eb742aef23d95"></edge>
+      <edge id="10657" source="cf91e4f5d8d0d7defca3b471d32221d2" target="ad8fed3f47a0e4ec199ea593994d9441"></edge>
+      <edge id="10740" source="fcf1d43fecbf07e560a3b72b092a978d" target="6746bea26b62ff2cf7e8d6329b42ec22"></edge>
+      <edge id="10741" source="fcf1d43fecbf07e560a3b72b092a978d" target="33cd22e96ed1592e6ba94782b3fe2827" weight="2.0"></edge>
+      <edge id="11417" source="8df92343f6970159a02394b345f1dc6c" target="543f869d5b4d99aaf26d56adb61928a9" weight="4.0"></edge>
+      <edge id="11439" source="8bb8f66f5f803aabe2ce5301a4ffc3fa" target="a18c21376730359487bb7e27416fdffd" weight="4.0"></edge>
+      <edge id="11449" source="8df92343f6970159a02394b345f1dc6c" target="b3f813874bd25d35c3a76f6bb1dbd0f2" weight="2.0"></edge>
+      <edge id="12059" source="8df92343f6970159a02394b345f1dc6c" target="c3f4c776997332bcd11723388a6c848d"></edge>
+      <edge id="13135" source="8df92343f6970159a02394b345f1dc6c" target="8bb8f66f5f803aabe2ce5301a4ffc3fa"></edge>
+      <edge id="15092" source="fcf1d43fecbf07e560a3b72b092a978d" target="1888d274dad213e6e77fea9a9b56e148" weight="2.0"></edge>
+      <edge id="17173" source="8219b6fe7ae0313524ec16e9af5d1fc6" target="01ff0267d33151d52aecaa65bb389aa9" weight="2.0"></edge>
+      <edge id="17246" source="c3f4c776997332bcd11723388a6c848d" target="01ff0267d33151d52aecaa65bb389aa9"></edge>
+      <edge id="20191" source="8bb8f66f5f803aabe2ce5301a4ffc3fa" target="512a11a4828ff0a58e34aa7bc9e855b3"></edge>
+      <edge id="20227" source="543f869d5b4d99aaf26d56adb61928a9" target="d39d40d457f9449c40bfced52c5b1947" weight="5.0"></edge>
+      <edge id="20233" source="b3f813874bd25d35c3a76f6bb1dbd0f2" target="30a6a32527479fcac51adc892797cf15" weight="4.0"></edge>
+      <edge id="20245" source="b3f813874bd25d35c3a76f6bb1dbd0f2" target="ad8fed3f47a0e4ec199ea593994d9441" weight="8.0"></edge>
+      <edge id="20250" source="b3f813874bd25d35c3a76f6bb1dbd0f2" target="543f869d5b4d99aaf26d56adb61928a9" weight="2.0"></edge>
+      <edge id="20282" source="c0524fc45113144bcb56435870113fd5" target="6746bea26b62ff2cf7e8d6329b42ec22" weight="3.0"></edge>
+      <edge id="20302" source="543f869d5b4d99aaf26d56adb61928a9" target="2bbf38a6de654291678eb742aef23d95" weight="3.0"></edge>
+      <edge id="20357" source="1ebb1461b44631f1425af36d851e5013" target="091a64081c4b6f8c5eddc9f79aa0b519"></edge>
+      <edge id="20358" source="1ebb1461b44631f1425af36d851e5013" target="03c3c045a79dce3712f19101672e0624"></edge>
+      <edge id="20391" source="b3f813874bd25d35c3a76f6bb1dbd0f2" target="2bbf38a6de654291678eb742aef23d95" weight="11.0"></edge>
+      <edge id="20405" source="1ebb1461b44631f1425af36d851e5013" target="66a255674ee03542af02bae37a900477"></edge>
+      <edge id="20489" source="543f869d5b4d99aaf26d56adb61928a9" target="30a6a32527479fcac51adc892797cf15" weight="15.0"></edge>
+      <edge id="20496" source="c0524fc45113144bcb56435870113fd5" target="01ff0267d33151d52aecaa65bb389aa9"></edge>
+      <edge id="20497" source="c0524fc45113144bcb56435870113fd5" target="1ebb1461b44631f1425af36d851e5013"></edge>
+      <edge id="20533" source="b3f813874bd25d35c3a76f6bb1dbd0f2" target="cf91e4f5d8d0d7defca3b471d32221d2"></edge>
+      <edge id="20637" source="c0524fc45113144bcb56435870113fd5" target="0b65b1022cba4d04ddd1067345b553db"></edge>
+      <edge id="20642" source="1ebb1461b44631f1425af36d851e5013" target="1e612ecd7c0741332df817a5be24f8a8" weight="6.0"></edge>
+      <edge id="20693" source="01ff0267d33151d52aecaa65bb389aa9" target="2bbf38a6de654291678eb742aef23d95"></edge>
+      <edge id="20695" source="01ff0267d33151d52aecaa65bb389aa9" target="ad8fed3f47a0e4ec199ea593994d9441" weight="2.0"></edge>
+      <edge id="20698" source="01ff0267d33151d52aecaa65bb389aa9" target="cf91e4f5d8d0d7defca3b471d32221d2"></edge>
+      <edge id="20733" source="543f869d5b4d99aaf26d56adb61928a9" target="d896a84163b9e2e4313687b9366ad59c" weight="5.0"></edge>
+      <edge id="20759" source="e39748bfcced812b2ad2c5091a7d78ab" target="23a87916df85b72ced1ee924201afbaf" weight="5.0"></edge>
+      <edge id="20761" source="e39748bfcced812b2ad2c5091a7d78ab" target="6746bea26b62ff2cf7e8d6329b42ec22" weight="4.0"></edge>
+      <edge id="20763" source="e39748bfcced812b2ad2c5091a7d78ab" target="33cd22e96ed1592e6ba94782b3fe2827" weight="5.0"></edge>
+      <edge id="20765" source="e39748bfcced812b2ad2c5091a7d78ab" target="fcf1d43fecbf07e560a3b72b092a978d" weight="2.0"></edge>
+      <edge id="20766" source="e39748bfcced812b2ad2c5091a7d78ab" target="0b65b1022cba4d04ddd1067345b553db" weight="2.0"></edge>
+      <edge id="20777" source="4d63e9fc8d956785d39329a0e503c27d" target="2007d3d8958b324beb393bd1e473ab78"></edge>
+      <edge id="20834" source="4d63e9fc8d956785d39329a0e503c27d" target="2137553a600dd8e7255b937b20acc9da"></edge>
+      <edge id="20859" source="1ebb1461b44631f1425af36d851e5013" target="6746bea26b62ff2cf7e8d6329b42ec22"></edge>
+      <edge id="20865" source="b3f813874bd25d35c3a76f6bb1dbd0f2" target="01ff0267d33151d52aecaa65bb389aa9"></edge>
+      <edge id="21320" source="543f869d5b4d99aaf26d56adb61928a9" target="71b0740e104af99e9a6472c079341d6e"></edge>
+      <edge id="21323" source="543f869d5b4d99aaf26d56adb61928a9" target="cf91e4f5d8d0d7defca3b471d32221d2"></edge>
+      <edge id="21324" source="543f869d5b4d99aaf26d56adb61928a9" target="85caa3b5ee831722a3e71a6e5518ba14"></edge>
+      <edge id="21325" source="543f869d5b4d99aaf26d56adb61928a9" target="8219b6fe7ae0313524ec16e9af5d1fc6"></edge>
+      <edge id="21343" source="cf2d5196861e7dcb14ce4abdde8261dd" target="2007d3d8958b324beb393bd1e473ab78" weight="2.0"></edge>
+      <edge id="21850" source="33cd22e96ed1592e6ba94782b3fe2827" target="6746bea26b62ff2cf7e8d6329b42ec22" weight="5.0"></edge>
+      <edge id="21908" source="ad8fed3f47a0e4ec199ea593994d9441" target="71b0740e104af99e9a6472c079341d6e"></edge>
+      <edge id="21909" source="ad8fed3f47a0e4ec199ea593994d9441" target="2bbf38a6de654291678eb742aef23d95" weight="11.0"></edge>
+      <edge id="21949" source="ad8fed3f47a0e4ec199ea593994d9441" target="8219b6fe7ae0313524ec16e9af5d1fc6" weight="3.0"></edge>
+      <edge id="21959" source="091a64081c4b6f8c5eddc9f79aa0b519" target="8df92343f6970159a02394b345f1dc6c" weight="4.0"></edge>
+      <edge id="21961" source="091a64081c4b6f8c5eddc9f79aa0b519" target="03c3c045a79dce3712f19101672e0624" weight="6.0"></edge>
+      <edge id="22008" source="091a64081c4b6f8c5eddc9f79aa0b519" target="f9cc1c3682be61ca8cc02993fe326046" weight="6.0"></edge>
+      <edge id="22057" source="03c3c045a79dce3712f19101672e0624" target="8df92343f6970159a02394b345f1dc6c"></edge>
+      <edge id="22061" source="33cd22e96ed1592e6ba94782b3fe2827" target="1ebb1461b44631f1425af36d851e5013" weight="3.0"></edge>
+      <edge id="22063" source="33cd22e96ed1592e6ba94782b3fe2827" target="a4566b655c6965e27ee688a2fd2ae713"></edge>
+      <edge id="22131" source="d39d40d457f9449c40bfced52c5b1947" target="a4566b655c6965e27ee688a2fd2ae713" weight="2.0"></edge>
+      <edge id="22138" source="30a6a32527479fcac51adc892797cf15" target="71b0740e104af99e9a6472c079341d6e" weight="3.0"></edge>
+      <edge id="22177" source="ad8fed3f47a0e4ec199ea593994d9441" target="543f869d5b4d99aaf26d56adb61928a9" weight="8.0"></edge>
+      <edge id="22210" source="a18c21376730359487bb7e27416fdffd" target="ad8fed3f47a0e4ec199ea593994d9441"></edge>
+      <edge id="22237" source="2007d3d8958b324beb393bd1e473ab78" target="ad8fed3f47a0e4ec199ea593994d9441"></edge>
+      <edge id="22238" source="2007d3d8958b324beb393bd1e473ab78" target="2bbf38a6de654291678eb742aef23d95"></edge>
+      <edge id="22683" source="03c3c045a79dce3712f19101672e0624" target="1344ce38c3b3c187ab4271eb48a46e10" weight="5.0"></edge>
+      <edge id="23081" source="23a87916df85b72ced1ee924201afbaf" target="33cd22e96ed1592e6ba94782b3fe2827"></edge>
+      <edge id="23720" source="23a87916df85b72ced1ee924201afbaf" target="2bbf38a6de654291678eb742aef23d95" weight="2.0"></edge>
+      <edge id="23879" source="30a6a32527479fcac51adc892797cf15" target="8219b6fe7ae0313524ec16e9af5d1fc6"></edge>
+      <edge id="23880" source="30a6a32527479fcac51adc892797cf15" target="ad8fed3f47a0e4ec199ea593994d9441"></edge>
+      <edge id="24085" source="2bbf38a6de654291678eb742aef23d95" target="71b0740e104af99e9a6472c079341d6e"></edge>
+      <edge id="24462" source="7108706a24cad007a0b8ce69d2396506" target="b3f813874bd25d35c3a76f6bb1dbd0f2"></edge>
+      <edge id="24492" source="7108706a24cad007a0b8ce69d2396506" target="1c56503be345b92ab2d78d7fa02e86f7" weight="2.0"></edge>
+      <edge id="24511" source="342c03be7544130bbc326fe118d4a470" target="091a64081c4b6f8c5eddc9f79aa0b519"></edge>
+      <edge id="24528" source="342c03be7544130bbc326fe118d4a470" target="c3f4c776997332bcd11723388a6c848d" weight="2.0"></edge>
+      <edge id="24595" source="7108706a24cad007a0b8ce69d2396506" target="f04e28fa775574f2ad55fb24fb76e498" weight="3.0"></edge>
+      <edge id="24623" source="7108706a24cad007a0b8ce69d2396506" target="5dafd1740af50a1bd50439fb693182e1" weight="3.0"></edge>
+      <edge id="24812" source="7108706a24cad007a0b8ce69d2396506" target="ad8fed3f47a0e4ec199ea593994d9441" weight="2.0"></edge>
+      <edge id="25572" source="7108706a24cad007a0b8ce69d2396506" target="8bb8f66f5f803aabe2ce5301a4ffc3fa"></edge>
+      <edge id="26280" source="342c03be7544130bbc326fe118d4a470" target="2007d3d8958b324beb393bd1e473ab78" weight="2.0"></edge>
+      <edge id="26440" source="7108706a24cad007a0b8ce69d2396506" target="71b0740e104af99e9a6472c079341d6e" weight="2.0"></edge>
+      <edge id="26610" source="7108706a24cad007a0b8ce69d2396506" target="f9cc1c3682be61ca8cc02993fe326046" weight="2.0"></edge>
+      <edge id="26766" source="85caa3b5ee831722a3e71a6e5518ba14" target="8df92343f6970159a02394b345f1dc6c"></edge>
+      <edge id="26768" source="85caa3b5ee831722a3e71a6e5518ba14" target="f9cc1c3682be61ca8cc02993fe326046"></edge>
+      <edge id="26770" source="85caa3b5ee831722a3e71a6e5518ba14" target="71b0740e104af99e9a6472c079341d6e" weight="2.0"></edge>
+      <edge id="27201" source="85caa3b5ee831722a3e71a6e5518ba14" target="ad8fed3f47a0e4ec199ea593994d9441"></edge>
+      <edge id="27206" source="85caa3b5ee831722a3e71a6e5518ba14" target="8219b6fe7ae0313524ec16e9af5d1fc6"></edge>
+      <edge id="27247" source="342c03be7544130bbc326fe118d4a470" target="1888d274dad213e6e77fea9a9b56e148"></edge>
+      <edge id="27507" source="342c03be7544130bbc326fe118d4a470" target="6746bea26b62ff2cf7e8d6329b42ec22"></edge>
+    </edges>
+  </graph>
+</gexf>
