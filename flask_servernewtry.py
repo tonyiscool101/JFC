@@ -206,9 +206,7 @@ def draw_graph():
         if g.user:
             # Replace underscores in branch name with spaces
             userbranch = session['branch']
-
             file_name = userbranch + '.gexf'
-            print(file_name)
 
             return render_template('project_map.html', file_name = file_name)
         return redirect(url_for('login'))

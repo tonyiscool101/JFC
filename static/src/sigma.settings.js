@@ -33,7 +33,7 @@
     // {string}
     defaultEdgeType: 'def',
     // {string}
-    defaultLabelColor: '#000',
+    defaultLabelColor: '#FFFFFF',
     // {string}
     defaultEdgeColor: '#000',
     // {string}
@@ -58,7 +58,7 @@
     // {string} The ratio between the font size of the label and the node size.
     labelSizeRatio: 1,
     // {number} The minimum size a node must have to see its label displayed.
-    labelThreshold: 8,
+    labelThreshold:8,
     // {number} The oversampling factor used in WebGL renderer.
     webglOversamplingRatio: 2,
     // {number} The size of the border of hovered nodes.
@@ -141,8 +141,8 @@
     //          of the nodes will be their size.
     minEdgeSize: 0.5,
     maxEdgeSize: 1,
-    minNodeSize: 1,
-    maxNodeSize: 8,
+    minNodeSize: 3,
+    maxNodeSize: 10,
 
 
 

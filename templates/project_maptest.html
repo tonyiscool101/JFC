@@ -86,104 +86,66 @@
       position: absolute;
       background-color: #000000;
     }
-    .sigma-edge {
-      stroke: #14191C;
-    }
-    .sigma-node {
-      fill: green;
-      stroke: #14191C;
-      stroke-width: 2px;
-    }
-    .sigma-node:hover {
-      fill: blue;
-    }
-    .muted {
-      fill-opacity: 0.1;
-      stroke-opacity: 0.1;
+
+    #sidebar {
+      bottom: 0;
+      right: 0;
+      width: 200px;
+      height: 150px;
+      position: absolute;
+      background-color: #999;
+      padding: 10px;
     }
   </style>
   <div id="graph-container"></div>
+  <div id="sidebar">This area is not a drop target.</div>
 </div>
 <script>
 
+var g = {
+	nodes: [],
+	edges: []
+};
 
-sigma.classes.graph.addMethod('neighbors', function(nodeId) {
-var k,
-	neighbors = {},
-	index = this.allNeighborsIndex[nodeId] || {};
-
-for (k in index)
-  neighbors[k] = this.nodesIndex[k];
-
-return neighbors;
+s = new sigma({
+  graph: g,
+  container: 'graph-container',
+   renderer: {
+    container: document.getElementById('network-graph'),
+    type: 'canvas'
+   }
 });
 
 
 var FILENAME = "{{ file_name|safe }}"
 
-sigma.parsers.gexf("../static/test-data/" + FILENAME, {
-  container: 'graph-container'
-},
+sigma.parsers.gexf("../static/test-data/" + FILENAME, s,
+ function(s) { //This function is passed an instance of Sigma s
+    //Initialize nodes as a circle
+    s.graph.nodes().forEach(function(node, i, a) {
+      node.x = Math.cos(Math.PI * 2 * i / a.length);
+      node.y = Math.sin(Math.PI * 2 * i / a.length);
+    });
+    s.refresh();
+    s.startForceAtlas2();
+  });
+  
+// Initialize the dragNodes plugin:
+var dragListener = sigma.plugins.dragNodes(s, s.renderers[0]);
 
-	function(s) {
-	  // We first need to save the original colors of our
-	  // nodes and edges, like this:
-	  s.graph.nodes().forEach(function(n) {
-		n.originalColor = n.color;
-	  });
-	  s.graph.edges().forEach(function(e) {
-		e.originalColor = e.color;
-	  });
+dragListener.bind('startdrag', function(event) {
+  console.log(event);
+});
+dragListener.bind('drag', function(event) {
+  console.log(event);
+});
+dragListener.bind('drop', function(event) {
+  console.log(event);
+});
+dragListener.bind('dragend', function(event) {
+  console.log(event);
+});
 
-	  // When a node is clicked, we check for each node
-	  // if it is a neighbor of the clicked one. If not,
-	  // we set its color as grey, and else, it takes its
-	  // original color.
-	  // We do the same for the edges, and we only keep
-	  // edges that have both extremities colored.
-	  s.bind('clickNode', function(e) {
-		var nodeId = e.data.node.id,
-			toKeep = s.graph.neighbors(nodeId);
-		toKeep[nodeId] = e.data.node;
-
-		s.graph.nodes().forEach(function(n) {
-		  if (toKeep[n.id])
-			n.color = n.originalColor;
-		  else
-			n.color = '#eee'
-			n.opacity = "0";
-		});
-
-		s.graph.edges().forEach(function(e) {
-		  if (toKeep[e.source] && toKeep[e.target])
-			e.color = e.originalColor;
-		  else
-			e.color = '#eee'
-			e.opacity = "0";
-		});
-
-		// Since the data has been modified, we need to
-		// call the refresh method to make the colors
-		// update effective.
-		s.refresh();
-	  });
-
-	  // When the stage is clicked, we just color each
-	  // node and edge with its original color.
-	  s.bind('clickStage', function(e) {
-		s.graph.nodes().forEach(function(n) {
-		  n.color = n.originalColor;
-		});
-
-		s.graph.edges().forEach(function(e) {
-		  e.color = e.originalColor;
-		});
-
-		// Same as in the previous event:
-		s.refresh();
-	  });
-	}
-);
 </script>
 </body>
 </html>
