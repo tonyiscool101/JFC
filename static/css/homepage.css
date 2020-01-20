@@ -55,6 +55,11 @@ body {
   color: #55ACEE;
 }
 
+.fa-share-alt {
+  background: #ECF0F1;
+  color: #55ACEE;
+}
+
 .fa-search {
   background: #ECF0F1;
   color: #3B5998;
@@ -117,5 +122,3 @@ body {
     max-height: 72px;
     max-width: 250px;
 }
-
-  

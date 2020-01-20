@@ -212,6 +212,19 @@ def draw_graph():
         return redirect(url_for('login'))
 
 #######################################################################
+# Interactive Map 2
+#######################################################################
+@app.route("/project_map2")
+def draw_graph2():
+        if g.user:
+            # Replace underscores in branch name with spaces
+            userbranch = session['branch']
+            file_name = userbranch + '.gexf'
+
+            return render_template('project_map2.html', file_name = file_name)
+        return redirect(url_for('login'))
+
+#######################################################################
 # FAQ, About and Contact Page
 #######################################################################
 @app.route('/<page>')
