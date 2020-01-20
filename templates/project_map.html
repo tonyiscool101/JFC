@@ -149,9 +149,9 @@ sigma.parsers.gexf("../static/test-data/" + FILENAME, {
 		s.graph.nodes().forEach(function(n) {
 		  if (toKeep[n.id])
 			n.color = n.originalColor;
+			//n.setAttributeNS(null, 'class', node.getAttribute('class') + ' muted);
 		  else
 			n.color = '#eee'
-			n.opacity = "0";
 		});
 
 		s.graph.edges().forEach(function(e) {
@@ -159,7 +159,6 @@ sigma.parsers.gexf("../static/test-data/" + FILENAME, {
 			e.color = e.originalColor;
 		  else
 			e.color = '#eee'
-			e.opacity = "0";
 		});
 
 		// Since the data has been modified, we need to
