@@ -710,9 +710,11 @@
                             _g = _col.attr("g"),
                             _b = _col.attr("b"),
                             _attr = _n.find("attvalue");
+							
+						//NODE COLOUR DISPLAYS
                         _d.rgb = [_r, _g, _b];
-                        _d.B = "rgba(" + _r + "," + _g + "," + _b + ",.7)";
-                        _d.G = "rgba(" + Math.floor(84 + .33 * _r) + "," + Math.floor(84 + .33 * _g) + "," + Math.floor(84 + .33 * _b) + ",.5)";
+                        _d.B = "rgba(" + _r + "," + _g + "," + _b + ",1)";
+                        _d.G = "rgba(" + Math.floor(84 + .33 * _r) + "," + Math.floor(84 + .33 * _g) + "," + Math.floor(84 + .33 * _b) + ",.2)";
                         _d.a = [];
                         $(_attr).each(function () {
                             var _a = $(this),
@@ -759,6 +761,7 @@
                                     _g = _scol[1],
                                     _b = _scol[2];
                             } else {
+								//EDGE COLOUR WHEN NODE CLICKED
                                 var _tcol = GexfJS.graph.nodeList[_tix].rgb,
                                     _r = Math.floor(.5 * _scol[0] + .5 * _tcol[0]),
                                     _g = Math.floor(.5 * _scol[1] + .5 * _tcol[1]),
@@ -770,7 +773,7 @@
                             t: _tix,
                             W: Math.max(GexfJS.params.minEdgeWidth, Math.min(GexfJS.params.maxEdgeWidth, (_w || 1))) * _scale,
                             w: parseFloat(_w || "1"),
-                            C: "rgba(" + _r + "," + _g + "," + _b + ",.7)",
+                            C: "rgba(" + _r + "," + _g + "," + _b + ",1)",
                             l: _e.attr("label") || "",
                             d: _directed
                         });
@@ -987,7 +990,11 @@
                     GexfJS.ctxGraphe.lineWidth = _edgeSizeFactor * _d.W;
                     var _coords = ((GexfJS.params.useLens && GexfJS.mousePosition) ? calcCoord(GexfJS.mousePosition.x, GexfJS.mousePosition.y, _ds.actual_coords) : _ds.actual_coords);
                     _coordt = ((GexfJS.params.useLens && GexfJS.mousePosition) ? calcCoord(GexfJS.mousePosition.x, GexfJS.mousePosition.y, _dt.actual_coords) : _dt.actual_coords);
-                    GexfJS.ctxGraphe.strokeStyle = (_isLinked ? _d.C : "rgba(100,100,100,0.2)");
+                    
+
+					
+					//DEFAULT EDGE COLOUR
+					GexfJS.ctxGraphe.strokeStyle = (_isLinked ? _d.C : "rgba(0,0,0,0.6)");
                     traceArc(GexfJS.ctxGraphe, _coords, _coordt, _sizeFactor * 3.5, GexfJS.params.showEdgeArrow && _d.d);
                 }
             }
@@ -995,7 +1002,7 @@
         }
 
         GexfJS.ctxGraphe.lineWidth = 4;
-        GexfJS.ctxGraphe.strokeStyle = "rgba(0,100,0,0.8)";
+        GexfJS.ctxGraphe.strokeStyle = "rgba(0,0,0,1)";
 
         if (_centralNode != -1) {
             var _dnc = GexfJS.graph.nodeList[_centralNode];
@@ -1032,12 +1039,13 @@
                             _fs = Math.max(GexfJS.params.textDisplayThreshold + 2, _fs);
                         }
                     }
+					//LABEL SETTINGS
                     if (_fs > GexfJS.params.textDisplayThreshold) {
-                        GexfJS.ctxGraphe.fillStyle = ((i != GexfJS.params.activeNode) && _tagsMisEnValeur.length && ((!_d.isTag) || (_centralNode != -1)) ? "rgba(60,60,60,0.7)" : "rgb(0,0,0)");
+                        GexfJS.ctxGraphe.fillStyle = ((i != GexfJS.params.activeNode) && _tagsMisEnValeur.length && ((!_d.isTag) || (_centralNode != -1)) ? "rgba(255,255,255,1)" : "rgb(255,255,255)");
                         GexfJS.ctxGraphe.font = Math.floor(_fs) + "px Arial";
-                        GexfJS.ctxGraphe.textAlign = "center";
+                        GexfJS.ctxGraphe.textAlign = "left";
                         GexfJS.ctxGraphe.textBaseline = "middle";
-                        GexfJS.ctxGraphe.fillText(_d.l, _d.real_coords.x, _d.real_coords.y);
+                        GexfJS.ctxGraphe.fillText(_d.l, 20 + _d.real_coords.x, _d.real_coords.y);
                     }
                 }
             }
@@ -1050,17 +1058,22 @@
             GexfJS.ctxGraphe.closePath();
             GexfJS.ctxGraphe.fill();
             GexfJS.ctxGraphe.stroke();
+			
+			//CLICKED NODE LABEL SETTINGS
             var _fs = Math.max(GexfJS.params.textDisplayThreshold + 2, _dnc.real_coords.r * _textSizeFactor) + 2;
             GexfJS.ctxGraphe.font = "bold " + Math.floor(_fs) + "px Arial";
-            GexfJS.ctxGraphe.textAlign = "center";
+            GexfJS.ctxGraphe.textAlign = "left";
             GexfJS.ctxGraphe.textBaseline = "middle";
-            GexfJS.ctxGraphe.fillStyle = "rgba(255,255,250,0.8)";
-            GexfJS.ctxGraphe.fillText(_dnc.l, _dnc.real_coords.x - 2, _dnc.real_coords.y);
-            GexfJS.ctxGraphe.fillText(_dnc.l, _dnc.real_coords.x + 2, _dnc.real_coords.y);
-            GexfJS.ctxGraphe.fillText(_dnc.l, _dnc.real_coords.x, _dnc.real_coords.y - 2);
-            GexfJS.ctxGraphe.fillText(_dnc.l, _dnc.real_coords.x, _dnc.real_coords.y + 2);
-            GexfJS.ctxGraphe.fillStyle = "rgb(0,0,0)";
-            GexfJS.ctxGraphe.fillText(_dnc.l, _dnc.real_coords.x, _dnc.real_coords.y);
+
+            //GexfJS.ctxGraphe.fillStyle = "rgba(255,255,250,0.8)";
+            //GexfJS.ctxGraphe.fillText(_dnc.l, 20 + _dnc.real_coords.x - 2, _dnc.real_coords.y);
+            //GexfJS.ctxGraphe.fillText(_dnc.l, 20 + _dnc.real_coords.x + 2, _dnc.real_coords.y);
+            //GexfJS.ctxGraphe.fillText(_dnc.l, 20 + _dnc.real_coords.x, _dnc.real_coords.y - 2);
+            //GexfJS.ctxGraphe.fillText(_dnc.l, 20 + _dnc.real_coords.x, _dnc.real_coords.y + 2);
+           	GexfJS.ctxGraphe.strokeText( _dnc.l, 20 + _dnc.real_coords.x, _dnc.real_coords.y);
+			GexfJS.ctxGraphe.fillStyle = "rgb(255,255,255)";
+            GexfJS.ctxGraphe.fillText(_dnc.l, 20 + _dnc.real_coords.x, _dnc.real_coords.y);
+			
         }
 
         GexfJS.ctxMini.putImageData(GexfJS.imageMini, 0, 0);

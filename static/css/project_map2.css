@@ -1,31 +1,174 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Andada|Permanent+Marker|Raleway:300');
+
+img {
+  display: block;
+}
+
+table {
+  border: none;
+}
+
+body {
+	color: #000000;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:13px;
+	text-align:center;
+	background-color: #000000;
+	margin: 0px;
+	overflow: hidden;
+}
+
+#container{
+	background: #000000;;
+}
+
+#info {
+	position: absolute;
+	top: 0px; width: 100%;
+	padding: 5px;
+}
+
+a {
+
+	color: #0080ff;
+}
+
+.format_table {
+  border-spacing: 5px 0;
+  vertical-align: center;
+  margin-top: 0%;
+}
+.inside_table {
+  border-spacing: 5px 0;
+  vertical-align: center;
+}
+
+.margin_top {
+  margin-top: 10%;
+}
+
+.normal_font {
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  line-height: 2em;
+  color: black;
+  margin-bottom: 10cm;
+  text-align: left;
+}
+
+.right_align {
+  text-align: right;
+}
+
+.title_font {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+  line-height: 2em;
+  color: black;
+  margin-bottom: 10cm;
+  text-transform: capitalize;
+}
+
+.icon {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #0E0D0E; 
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #FFF;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFF;
+  color: black;
+}
+
+.img-responsive {
+    height: auto;
+    width: auto;
+    max-height: 72px;
+    max-width: 250px;
+}
+
+#cent {
+  position:absolute;
+  float: center;
+  text-align: center;
+  margin-top: 2%;
+  margin-left: 35%;
+}
+
+.middle_box {
+	background-color: #ECF0F1;
+	border-radius: 10%;
+	width: 30%;
+	height: 70%;
+}
+
+.nowrap {
+  white-space: nowrap ;
+}
+
+.icon {
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+
 /* Copyright (c) 2011 Raphaël Velt
  * Licensed under the MIT License
  * */
-
-body {
-    font-family: Helvetica, Arial, sans-serif; font-size: 12px;
-    background-color: #e0e0e8; color: #204020; margin: 0;
-}
 
 .clear {
     clear: both;
 }
 
 .gradient {
-    background-color: #f0f0f8; 
-    background-image: -webkit-radial-gradient(#ffffff, #d8d8e0); background-image: -moz-radial-gradient(#ffffff, #d8d8e0);
+    background-color: #666666;
 }
 
 /* EN HAUT */
 
 #titlebar {
-    background: #ffffff; border-bottom: 1px solid #CCC; position: fixed; margin: 0; padding: 0; left: 0; top: 0; right: 0; height: 45px; overflow: hidden;
+    background: #ffffff; 
+	border-bottom: 1px solid #CCC;
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	left: 0;
+	top: 100px;
+	right: 0;
+	height: 62px;
+	overflow: hidden;
 }
 
 #maintitle {
-    position: absolute; left: 0; top: 0; width: 250px; text-align: center;
+    position: absolute; 
+	left: 0; 
+	top: 100px;
+	width: 250px; 
+	text-align: center;
 }
-
 
 h1 {
     margin:0;
@@ -42,14 +185,14 @@ h1 a {
 }
 
 #searchinput {
-    background: #fff url(../img/search.gif) no-repeat right;
-    border: 5px solid #FFF;
+    background: #fff	url(../img/search.gif) no-repeat right;
+    border: 5px solid #000;
     font-size:20px; line-height: 14px, height: 14px;
-    left: 0px;
+    right: 0;
     padding: 1px 4px; margin: 0;
     position: absolute;
-    top: 100px;
-    width: 320px;
+    top: 62px;
+    width: 300px;
 }
 
 #searchinput:focus, #searchinput:active {
@@ -57,7 +200,19 @@ h1 a {
 }
 
 #searchsubmit {
-    position: absolute; left: 560px; top: 13px; width: 20px; height: 20px; margin: 0; padding: 0; height: 16px; border: none; background: none; text-indent: -999px; cursor: pointer; cursor: hand;
+    position: absolute; 
+	left: 560px; 
+	top: 13px; 
+	width: 20px; 
+	height: 20px; 
+	margin: 0; 
+	padding: 0; 
+	height: 16px; 
+	border: none; 
+	background: none; 
+	text-indent: -999px; 
+	cursor: pointer; 
+	cursor: hand;
 }
 
 .grey {
@@ -67,9 +222,13 @@ h1 a {
 /* AU CENTRE */
 
 #zonecentre {
-    position: fixed; top: 45px; bottom: 0; left: 0; right: 0; overflow: hidden;
+    position: fixed; 
+	top: 50px; 
+	bottom: 0; 
+	left: 0; 
+	right: 0;
+	overflow: hidden;
 }
-
 
 #carte {
     position: absolute; left: 0px;
@@ -231,9 +390,7 @@ div.smallpill {
     max-height: 300px;
 }
 
-a {
-    color: #06a8de; font-weight: bold; text-decoration: none;
-}
+
 
 a:hover {
     color: #000080;
@@ -277,3 +434,4 @@ a:hover {
 #autocomplete img {
     float: left; border: 0; width: 24px; height: 24px; margin: 2px 6px;
 }
+

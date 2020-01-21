@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Gephi: JavaScript GEXF Viewer</title>
+		<link rel="stylesheet" href="/static/css/project_map2.css" type="text/css">
+		
         <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-        <link rel="stylesheet" type="text/css" href="static/css/gexfjs.css" />
         <link rel="stylesheet" type="text/css" href="static/css/jquery-ui-1.10.3.custom.min.css" />
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script type="text/javascript">
-        // Fallback in case JQuery CDN isn't available
-            if (typeof jQuery == 'undefined') {
-                document.write(unescape("%3Cscript type='text/javascript' src='static/js/jquery-2.0.2.min.js'%3E%3C/script%3E"));
-            }
-        </script>
         <script type="text/javascript" src="static/js/jquery.mousewheel.min.js"></script>
         <script type="text/javascript" src="static/js/jquery-ui-1.10.3.custom.min.js"></script>
-        <script type="text/javascript" src="static/js/gexfjs.js"></script>
+		<script type="text/javascript" src="static/js/gexfjs.js"></script>
+		
     </head>
-    <body>
 	
+    <body>
+
+	<table cellspacing="0" cellpadding="0" width="100%" >
+	  <tr>
+		<th bgcolor="#0E0D0E">
+			<font color="#0E0D0E">Someone fix this spaghetti table</font>
+		</th>
+		<th rowspan="2" align="right" class="topnav">
+				<img src="/static/images/icon.jpg" class="img-responsive" alt="">
+		</th>
+	  </tr>
+	  <tr>
+		<td class="topnav"> 
+			<a class="active" href="/homepage">Home</a>
+			<a href="/FAQ">FAQ</a>
+			<a href="/contact">Contact</a>
+			<a href="/about">About</a>
+		</td> 
+	  </tr>
+	</table>
+
 	
 	<script> 
 	
@@ -27,7 +42,7 @@ var FILENAME = "{{ file_name|safe }}"
 
 
 GexfJS.setParams({
-    graphFile : "../static/test-data/" + FILENAME
+    graphFile : "../static/test-data/" + FILENAME,
         /*
             The GEXF file to show ! -- can be overriden by adding
             a hash to the document location, e.g. index.html#celegans.gexf
@@ -56,10 +71,10 @@ GexfJS.setParams({
             Change this parameter for wider or narrower edges
             this setting can't be changed from the User Interface
         */
-    minEdgeWidth : 1,
+    minEdgeWidth : 2,
     maxEdgeWidth : 50,
-    textDisplayThreshold: 9,
-    fontSizeFactor : 1,
+    textDisplayThreshold: 8,
+    fontSizeFactor : 0.8,
     nodeSizeFactor : 1,
         /*
             Change this parameter for smaller or larger nodes
@@ -109,7 +124,10 @@ GexfJS.setParams({
 
 	
 	</script>
-        <div id="zonecentre" class="gradient">
+		<div id="titlebar">
+
+        </div>
+        <div id="zonecentre" class="gradient" >
             <canvas id="carte" width="0" height="0"></canvas>
             <ul id="ctlzoom">
                 <li>
@@ -138,16 +156,13 @@ GexfJS.setParams({
             </div>
             <div id="leftcontent"></div>
         </div>
-        <div id="titlebar">
-            <div id="maintitle">
-                <h1><a href="http://gephi.org/" target="_blank" title="Made with Gephi">Gephi: JavaScript GEXF Viewer</a></h1>
-            </div>
-            <form id="recherche">
-                <input id="searchinput" class="grey" autocomplete="off" />
+		<div>
+		<form id="recherche">
+                <input id="searchinput" class="grey" autocomplete="off" placeholder = "Employee Search" />
                 <input id="searchsubmit" type="submit" />
-            </form>
-        </div>
+		</form>
         <ul id="autocomplete">
         </ul>
+		</div>
     </body>
 </html>
