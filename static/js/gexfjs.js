@@ -1032,17 +1032,15 @@
                     if (_d.isTag) {
                         if (_centralNode != -1) {
                             var _dist = Math.sqrt(Math.pow(_d.real_coords.x - _dnc.real_coords.x, 2) + Math.pow(_d.real_coords.y - _dnc.real_coords.y, 2));
-                            if (_dist > 80) {
-                                _fs = Math.max(GexfJS.params.textDisplayThreshold + 2, _fs);
-                            }
-                        } else {
-                            _fs = Math.max(GexfJS.params.textDisplayThreshold + 2, _fs);
+                            //CLICKED ON OTHER LABEL SETTINGS
+							_fs = Math.max(GexfJS.params.textDisplayThreshold + 2, _fs);
                         }
                     }
 					//LABEL SETTINGS
                     if (_fs > GexfJS.params.textDisplayThreshold) {
                         GexfJS.ctxGraphe.fillStyle = ((i != GexfJS.params.activeNode) && _tagsMisEnValeur.length && ((!_d.isTag) || (_centralNode != -1)) ? "rgba(255,255,255,1)" : "rgb(255,255,255)");
-                        GexfJS.ctxGraphe.font = Math.floor(_fs) + "px Arial";
+                        //GexfJS.ctxGraphe.font = Math.floor(_fs) + "px Arial";
+						GexfJS.ctxGraphe.font = 13 + "px Arial";
                         GexfJS.ctxGraphe.textAlign = "left";
                         GexfJS.ctxGraphe.textBaseline = "middle";
                         GexfJS.ctxGraphe.fillText(_d.l, 20 + _d.real_coords.x, _d.real_coords.y);
@@ -1058,9 +1056,10 @@
             GexfJS.ctxGraphe.closePath();
             GexfJS.ctxGraphe.fill();
             GexfJS.ctxGraphe.stroke();
+
 			
 			//CLICKED NODE LABEL SETTINGS
-            var _fs = Math.max(GexfJS.params.textDisplayThreshold + 2, _dnc.real_coords.r * _textSizeFactor) + 2;
+            var _fs = Math.max(GexfJS.params.textDisplayThreshold + 2, _dnc.real_coords.r * _textSizeFactor) + 5;
             GexfJS.ctxGraphe.font = "bold " + Math.floor(_fs) + "px Arial";
             GexfJS.ctxGraphe.textAlign = "left";
             GexfJS.ctxGraphe.textBaseline = "middle";
