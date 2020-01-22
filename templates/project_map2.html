@@ -76,10 +76,16 @@ GexfJS.setParams({
     textDisplayThreshold: 8,
     fontSizeFactor : 0.8,
     nodeSizeFactor : 1,
+
         /*
             Change this parameter for smaller or larger nodes
            this setting can't be changed from the User Interface
         */
+		
+	clickedOnNode : 0,
+		// initialise variable
+	
+
     replaceUrls : true,
         /*
             Enable the replacement of Urls by Hyperlinks
@@ -108,16 +114,6 @@ GexfJS.setParams({
     language: false,
         /*
             Set to an ISO language code to switch the interface to that language.
-            Available languages are:
-            - German [de]
-            - English [en]
-            - French [fr]
-            - Spanish [es]
-            - Italian [it]
-            - Finnish [fi]
-            - Turkish [tr]
-            - Greek [el]
-            - Dutch [nl]
             If set to false, the language will be that of the user's browser.
         */
 });

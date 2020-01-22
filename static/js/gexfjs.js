@@ -42,50 +42,6 @@
         totalScroll: 0,
         autoCompletePosition: 0,
         i18n: {
-            "az": {
-                "search": "Təpələri axtar",
-                "nodeAttr": "Attributlar",
-                "nodes": "Təpə nöqtələri",
-                "inLinks": "Daxil olan əlaqələr:",
-                "outLinks": "Çıxan əlaqələr:",
-                "undirLinks": "İstiqamətsiz əlaqələr:",
-                "lensOn": "Linza rejiminə keç",
-                "lensOff": "Linza rejimindən çıx",
-                "edgeOn": "Tilləri göstər",
-                "edgeOff": "Tilləri gizlət",
-                "zoomIn": "Yaxınlaşdır",
-                "zoomOut": "Uzaqlaşdır",
-                "modularity_class": "Modullaşma sinfi",
-                "degree": "Dərəcə"
-            },
-            "de": {
-                "search": "Suche Knoten",
-                "nodeAttr": "Attribute",
-                "nodes": "Knoten",
-                "inLinks": "Ankommende Verknüpfung von",
-                "outLinks": "Ausgehende Verknüpfung zu",
-                "undirLinks": "Ungerichtete Verknüpfung mit",
-                "lensOn": "Vergrößerungsmodus an",
-                "lensOff": "Vergrößerungsmodus aus",
-                "edgeOn": "Kanten anzeigen",
-                "edgeOff": "Kanten verstecken",
-                "zoomIn": "Vergrößern",
-                "zoomOut": "Verkleinern",
-            },
-            "el": {
-                "search": "Αναζήτηση Κόμβων",
-                "nodeAttr": "Χαρακτηριστικά",
-                "nodes": "Κόμβοι",
-                "inLinks": "Εισερχόμενοι δεσμοί από",
-                "outLinks": "Εξερχόμενοι δεσμοί προς",
-                "undirLinks": "Ακατεύθυντοι δεσμοί με",
-                "lensOn": "Ενεργοποίηση φακού",
-                "lensOff": "Απενεργοποίηση φακού",
-                "edgeOn": "Εμφάνιση ακμών",
-                "edgeOff": "Απόκρυψη ακμών",
-                "zoomIn": "Μεγέθυνση",
-                "zoomOut": "Σμίκρυνση",
-            },
             "en": {
                 "search": "Search nodes",
                 "nodeAttr": "Attributes",
@@ -100,128 +56,6 @@
                 "zoomIn": "Zoom In",
                 "zoomOut": "Zoom Out",
             },
-            "es": {
-                "search": "Buscar un nodo",
-                "nodeAttr": "Atributos",
-                "nodes": "Nodos",
-                "inLinks": "Aristas entrantes desde :",
-                "outLinks": "Aristas salientes hacia :",
-                "undirLinks": "Aristas no dirigidas con :",
-                "lensOn": "Activar el modo lupa",
-                "lensOff": "Desactivar el modo lupa",
-                "edgeOn": "Mostrar aristas",
-                "edgeOff": "Ocultar aristas",
-                "zoomIn": "Acercar",
-                "zoomOut": "Alejar",
-                "modularity_class": "Clase de modularidad",
-                "degree": "Grado",
-                "indegree": "Grado de entrada",
-                "outdegree": "Grado de salida",
-                "weighted degree": "Grado ponderado",
-                "weighted indegree": "Grado de entrada ponderado",
-                "weighted outdegree": "Grado de salida ponderado",
-                "closnesscentrality": "Cercanía",
-                "betweenesscentrality": "Intermediación",
-                "authority": "Puntuación de autoridad (HITS)",
-                "hub": "Puntuación de hub (HITS)",
-                "pageranks": "Puntuación de PageRank"
-            },
-            "fi": {
-                "search": "Etsi solmuja",
-                "nodeAttr": "Attribuutit",
-                "nodes": "Solmut",
-                "inLinks": "Lähtevät yhteydet :",
-                "outLinks": "Tulevat yhteydet :",
-                "undirLinks": "Yhteydet :",
-                "lensOn": "Ota linssitila käyttöön",
-                "lensOff": "Poista linssitila käytöstä",
-                "edgeOn": "Näytä kaikki yhteydet",
-                "edgeOff": "Näytä vain valitun solmun yhteydet",
-                "zoomIn": "Suurenna",
-                "zoomOut": "Pienennä",
-            },
-            "fr": {
-                "search": "Rechercher un nœud",
-                "nodeAttr": "Attributs",
-                "nodes": "Nœuds",
-                "inLinks": "Liens entrants depuis :",
-                "outLinks": "Liens sortants vers :",
-                "undirLinks": "Liens non-dirigés avec :",
-                "lensOn": "Activer le mode loupe",
-                "lensOff": "Désactiver le mode loupe",
-                "edgeOn": "Afficher les sommets",
-                "edgeOff": "Cacher les sommets",
-                "zoomIn": "S'approcher",
-                "zoomOut": "S'éloigner",
-                "modularity_class": "Classe de modularité",
-                "degree": "Degré",
-                "indegree": "Demi-degré intérieur",
-                "outdegree": "Demi-degré extérieur",
-                "weighted degree": "Degré pondéré",
-                "weighted indegree": "Demi-degré intérieur pondéré",
-                "weighted outdegree": "Demi-degré extérieur pondéré",
-                "closnesscentrality": "Centralité de proximité",
-                "betweenesscentrality": "Centralité d’intermédiarité",
-                "authority": "Score d’autorité (HITS)",
-                "hub": "Score de hub (HITS)",
-                "pageranks": "Score de PageRank"
-            },
-            "it": {
-                "search": "Cerca i nodi",
-                "nodeAttr": "Attributi",
-                "nodes": "Nodi",
-                "inLinks": "Link in entrata da :",
-                "outLinks": "Link in uscita verso :",
-                "undirLinks": "Link non direzionati con :",
-                "lensOn": "Attiva la lente d’ingrandimento",
-                "lensOff": "Disattiva la lente d’ingrandimento",
-                "edgeOn": "Mostra gli spigoli",
-                "edgeOff": "Nascondi gli spigoli",
-                "zoomIn": "Zoom in avanti",
-                "zoomOut": "Zoom indietro",
-            },
-            "tr": {
-                "search": "Düğüm ara",
-                "nodeAttr": "Özellikler",
-                "nodes": "Düğümler",
-                "inLinks": "Gelen bağlantılar",
-                "outLinks": "Giden bağlantılar",
-                "undirLinks": "Yönsüz bağlantılar",
-                "lensOn": "Merceği etkinleştir",
-                "lensOff": "Merceği etkisizleştir",
-                "edgeOn": "Kenar çizgilerini göster",
-                "edgeOff": "Kenar çizgilerini gizle",
-                "zoomIn": "Yaklaştır",
-                "zoomOut": "Uzaklaştır",
-            },
-            "nl": {
-                "search": "Knooppunten doorzoeken",
-                "nodeAttr": "Attributen",
-                "nodes": "Knooppunten",
-                "inLinks": "Binnenkomende verbindingen van :",
-                "outLinks": "Uitgaande verbindingen naar :",
-                "undirLinks": "Ongerichtte verbindingen met:",
-                "lensOn": "Loepmodus activeren",
-                "lensOff": "Loepmodus deactiveren",
-                "edgeOn": "Kanten tonen",
-                "edgeOff": "Kanten verbergen",
-                "zoomIn": "Inzoomen",
-                "zoomOut": "Uitzoomen",
-            },
-            "pt": {
-                "search": "Pesquisar nós",
-                "nodeAttr": "Atributos",
-                "nodes": "Nós",
-                "inLinks": "Ligações de entrada",
-                "outLinks": "Ligações de saída",
-                "undirLinks": "Ligações sem direção",
-                "lensOn": "Ativar modo lente",
-                "lensOff": "Ativar modo lente",
-                "edgeOn": "Mostrar arestas",
-                "edgeOff": "Esconder arestas",
-                "zoomIn": "Aumentar zoom",
-                "zoomOut": "Diminuir zoom",
-            }
         },
         lang: "en"
     };
@@ -275,7 +109,13 @@
 
     function displayNode(_nodeIndex, _recentre) {
         GexfJS.params.currentNode = _nodeIndex;
+		
+		//IF A NODE HAS BEEN CLICKED ON
         if (_nodeIndex != -1) {
+			
+			//SET CLICKEDONNODE AS TRUE
+			GexfJS.params.clickedOnNode = 1;
+			
             var _d = GexfJS.graph.nodeList[_nodeIndex],
                 _html = $('<div>'),
                 _ul = $('<ul>'),
@@ -392,7 +232,12 @@
             $("#searchinput")
                 .val(_d.l)
                 .removeClass('grey');
-        }
+				
+		//IF EMPTY SPACE (NOT A NODE) HAS BEEN CLICKED ON
+        } else {
+			GexfJS.params.clickedOnNode = 0;
+
+		}
     }
 
     function updateWorkspaceBounds() {
@@ -472,9 +317,10 @@
     }
 
     function onGraphClick(evt) {
-        if (!GexfJS.mouseHasMoved && !GexfJS.pinchOn) {
+		if (!GexfJS.mouseHasMoved && !GexfJS.pinchOn) {
             displayNode(GexfJS.params.activeNode);
         }
+			
         endMove();
     }
 
@@ -735,6 +581,7 @@
                         GexfJS.graph.indexOfLabels.push(_d.l.toLowerCase());
                     });
 
+					//FIND SOURCE AND TARGET EDGES FROM GEXF
                     $(_edges).each(function () {
                         var _e = $(this),
                             _sid = _e.attr("source"),
@@ -952,6 +799,7 @@
             };
             _d.withinFrame = ((_d.actual_coords.x + _d.actual_coords.r > 0) && (_d.actual_coords.x - _d.actual_coords.r < GexfJS.graphZone.width) && (_d.actual_coords.y + _d.actual_coords.r > 0) && (_d.actual_coords.y - _d.actual_coords.r < GexfJS.graphZone.height));
             _d.visible = (GexfJS.params.currentNode == -1 || i == _centralNode || GexfJS.params.showEdges);
+			
         }
 
         var _tagsMisEnValeur = [];
@@ -1008,10 +856,14 @@
             var _dnc = GexfJS.graph.nodeList[_centralNode];
             _dnc.real_coords = ((GexfJS.params.useLens && GexfJS.mousePosition) ? calcCoord(GexfJS.mousePosition.x, GexfJS.mousePosition.y, _dnc.actual_coords) : _dnc.actual_coords);
         }
-
+		
+		//WHEN HOVERING NODE BUT HAVEN'T CLICKED
         for (var i in GexfJS.graph.nodeList) {
             var _d = GexfJS.graph.nodeList[i];
             if (_d.visible && _d.withinFrame) {
+				
+				
+				
                 if (i != _centralNode) {
                     _d.real_coords = ((GexfJS.params.useLens && GexfJS.mousePosition) ? calcCoord(GexfJS.mousePosition.x, GexfJS.mousePosition.y, _d.actual_coords) : _d.actual_coords);
                     _d.isTag = (_tagsMisEnValeur.indexOf(parseInt(i)) != -1);
@@ -1034,22 +886,35 @@
                             var _dist = Math.sqrt(Math.pow(_d.real_coords.x - _dnc.real_coords.x, 2) + Math.pow(_d.real_coords.y - _dnc.real_coords.y, 2));
                             //CLICKED ON OTHER LABEL SETTINGS
 							_fs = Math.max(GexfJS.params.textDisplayThreshold + 2, _fs);
+
+							
                         }
                     }
 					//LABEL SETTINGS
-                    if (_fs > GexfJS.params.textDisplayThreshold) {
-                        GexfJS.ctxGraphe.fillStyle = ((i != GexfJS.params.activeNode) && _tagsMisEnValeur.length && ((!_d.isTag) || (_centralNode != -1)) ? "rgba(255,255,255,1)" : "rgb(255,255,255)");
-                        //GexfJS.ctxGraphe.font = Math.floor(_fs) + "px Arial";
-						GexfJS.ctxGraphe.font = 13 + "px Arial";
-                        GexfJS.ctxGraphe.textAlign = "left";
-                        GexfJS.ctxGraphe.textBaseline = "middle";
-                        GexfJS.ctxGraphe.fillText(_d.l, 20 + _d.real_coords.x, _d.real_coords.y);
-                    }
+
+						if (_fs > GexfJS.params.textDisplayThreshold) {
+							GexfJS.ctxGraphe.fillStyle = ((i != GexfJS.params.activeNode) && _tagsMisEnValeur.length && ((!_d.isTag) || (_centralNode != -1)) ? "rgba(255,255,255,1)" : "rgb(255,255,255)");
+							
+							GexfJS.ctxGraphe.font = 13 + "px Arial";
+							GexfJS.ctxGraphe.textAlign = "left";
+							GexfJS.ctxGraphe.textBaseline = "middle";
+							GexfJS.ctxGraphe.fillText(_d.l, 15 + _d.real_coords.x, _d.real_coords.y);
+						}
+                    
                 }
             }
         }
-
-        if (_centralNode != -1) {
+		
+		
+		//IF A NODE HAS BEEN CLICKED
+        if (_centralNode != -1){
+			
+			if (GexfJS.params.clickedOnNode == 0) {
+				GexfJS.params.textDisplayThreshold = 8;
+			}else if (GexfJS.params.clickedOnNode == 1) {
+				GexfJS.params.textDisplayThreshold = 999;
+			}
+			
             GexfJS.ctxGraphe.fillStyle = _dnc.B;
             GexfJS.ctxGraphe.beginPath();
             GexfJS.ctxGraphe.arc(_dnc.real_coords.x, _dnc.real_coords.y, _dnc.real_coords.r, 0, Math.PI * 2, true);
@@ -1059,7 +924,7 @@
 
 			
 			//CLICKED NODE LABEL SETTINGS
-            var _fs = Math.max(GexfJS.params.textDisplayThreshold + 2, _dnc.real_coords.r * _textSizeFactor) + 5;
+			var _fs = Math.max(12, _dnc.real_coords.r * _textSizeFactor) + 3;
             GexfJS.ctxGraphe.font = "bold " + Math.floor(_fs) + "px Arial";
             GexfJS.ctxGraphe.textAlign = "left";
             GexfJS.ctxGraphe.textBaseline = "middle";
