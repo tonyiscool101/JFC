@@ -33,7 +33,6 @@ mycursor.execute("SELECT ID FROM SIMPLEID")
 IDlist =[]
 for x in mycursor:
     IDlist.append(x[0])
-print(IDlist)
 
 def CreateNWtable(ID): #statement for making a table of that id (the nw is added because for some reason some id strings were unable to be made into table names directly; to fix this we added nw before all the ids as explained above)
     return "CREATE TABLE nw" + ID + " (TargetID VARCHAR(50) PRIMARY KEY, Weight_in int, Weight_out int )"
@@ -41,15 +40,13 @@ def CreateNWtable(ID): #statement for making a table of that id (the nw is added
 def POPNWLTable(ID,Direction):#statment to insert rows into network list
     return "INSERT INTO nw" + ID + " (TargetID, Weight_"+ Direction +" ) VALUES(%s,%s)"
 
-print(CreateNWtable(IDlist[0]))
-print((POPNWLTable(IDlist[0],"In")))
 
 for i in range(len(IDlist)):
     nwcursor.execute(CreateNWtable(str(IDlist[i]))) #Creates table
     (G, labels, edgeThicc, n_nodes, NWL) = makeNetwork(str(IDlist[i]), 'Local', data) #Creates network (we need the Node weight list
-    print(NWL)
+
     for j in range(len(NWL)):
-        print(NWL[j])
+
         if str(IDlist[i]) == (str(NWL[j][0])): #Nodeweightlist contains messages going both in and out of target node; this code delineates between them and adds to the correct weight column
                 nwcursor.execute(POPNWLTable(IDlist[i],'Out'), (str(NWL[j][1]), NWL[j][2])) #WORK REQUIRED: All networks only have either ingoing or outgoin messages. Change from insert into statement to maybe update statement
         else:
