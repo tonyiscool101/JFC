@@ -31,11 +31,15 @@ Input file is SNA_Data.xlsx and can be replaced providing that the filename and 
 Search time is the greatest problem with the application and some searches that involve a large number of offices or cities take a large time to perform the analysis.
 
 # Update 2020
+
 User manual:
+
 Software: Python, mySQL
 
 Steps:
+
 To establish SQL database:-
+
 1.  
 
 2. Run SQLBegin.py
