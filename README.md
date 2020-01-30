@@ -37,9 +37,13 @@ Software: Python, mySQL
 Steps:
 To establish SQL database:-
 1.  
+
 2. Run SQLBegin.py
+
 3. Run NWL Database.py
+
 4. Run BranchDatabaseStart.py
 
 To establish server:-
+
 4. Run flask_servernewtry.py
